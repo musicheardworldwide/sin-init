@@ -28,7 +28,7 @@ Exegol fits pentesters, CTF players, bug bounty hunters, researchers, beginners 
 - PyPI package: https://pypi.org/project/Exegol/
 - Docker images: https://github.com/ThePorgs/Exegol-images
 - Docker images registry: https://hub.docker.com/repository/docker/nwodtuhs/exegol
-- Offline [[sin/1. Initialization/Docs/Blackhat/Resources|Resources]]: https://github.com/ThePorgs/Exegol-[[[[[[sin/1. Initialization/Docs/Blackhat/6. Blackhat|6. Blackhat]]]]/[[sin/1. Initialization/Docs/Blackhat/ethical hacking/Resources|Resources]]|[[sin/1. Initialization/Docs/Blackhat/ethical hacking/Resources|Resources]]]]
+- Offline [[sin/Initialization/Docs/Blackhat/Resources|Resources]]: https://github.com/ThePorgs/Exegol-[[[[[[sin/1. Initialization/Docs/Blackhat/6. Blackhat|6. Blackhat]]]]/[[sin/Initialization/Docs/Blackhat/ethical hacking/Resources|Resources]]|[[sin/Initialization/Docs/Blackhat/ethical hacking/Resources|Resources]]]]
 - Documenation: https://exegol.readthedocs.io/
 - Documentation source: https://github.com/ThePorgs/Exegol-docs
 

@@ -1,10 +1,10 @@
 # SPF - SpeedPhishing Framework 
 
 ### Description
-SPF (SpeedPhish Framework) is a python tool designed to allow for quick recon and deployment of simple social engineering [[sin/1. Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]] exercises.
+SPF (SpeedPhish Framework) is a python tool designed to allow for quick recon and deployment of simple social engineering [[sin/Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]] exercises.
 
 ### Categories
-* [[sin/1. Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]]
+* [[sin/Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]]
 * Frameworks
 
 ### Black Hat sessions

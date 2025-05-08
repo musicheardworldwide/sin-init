@@ -14,7 +14,7 @@ This account is maintained by NJ OUCHN from [ToolsWatch.org](https://www.toolswa
 
 Submit your template to the **most one representative categor**y as a pull request. After review, we will reflect the change on the repo.
 Use the given template `[[[[[[sin/1. Initialization/Docs/Blackhat/6. Blackhat|6. Blackhat]]]]/[[[[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]]/folders/[[sin/1. Initialization/Docs/Blackhat/6. Blackhat|6. Blackhat]]/[[sin/1. Initialization/Docs/Blackhat/tool_name|tool_name]]|[[sin/1. Initialization/Docs/Blackhat/tool_name|tool_name]]]]|[[[[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]]/folders/[[sin/1. Initialization/Docs/Blackhat/6. Blackhat|6. Blackhat]]/[[sin/1. Initialization/Docs/Blackhat/tool_name|tool_name]]|[[sin/1. Initialization/Docs/Blackhat/tool_name|tool_name]]]]]].md` . 
-Change [[sin/1. Initialization/Docs/Blackhat/tool_name|tool_name]].md to your tool name (ex: [[sin/1. Initialization/Docs/Blackhat/lynis|lynis]].md)
+Change [[sin/Initialization/Docs/Blackhat/tool_name|tool_name]].md to your tool name (ex: [[sin/Initialization/Docs/Blackhat/lynis|lynis]].md)
 
 ### Missing a category ? 
 

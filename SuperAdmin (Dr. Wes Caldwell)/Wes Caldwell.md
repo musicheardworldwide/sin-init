@@ -16,7 +16,7 @@ aliases:
 ---
 
 ## **Professional Identity**  
-- **Recording Artist:** [[sin/1. Initialization/SuperAdmin (Dr. Wes Caldwell)/Wes Mane]] ](https://musicheardworldwide.com/chase-single-by-wes-mane/)
+- **Recording Artist:** [[sin/Initialization/SuperAdmin (Dr. Wes Caldwell)/Wes Mane]] ](https://musicheardworldwide.com/chase-single-by-wes-mane/)
 - **AI & LLM Developer:** [[Dr. Wes Caldwell]]  
 - **Business Entity:** [[Wes Caldwell.]]  
 

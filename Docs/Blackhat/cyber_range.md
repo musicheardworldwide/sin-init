@@ -22,7 +22,7 @@ Use my secure [FormAssembly](https://www.formassembly.com) form -> [CyberRange S
 ### Categories
 * Frameworks
 * Red Team
-* [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
+* [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
 * Reverse Engineering
 * OSINT
 * Network Defense

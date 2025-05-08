@@ -1,7 +1,7 @@
 # Influencing Code Generation Through Instruction Rules
 
 ## Overview
-System instructions can precisely control code generation [[sin/1. Initialization/Docs/Prompting Guides/output]] by specifying documentation requirements. This guide demonstrates how requiring docstrings affects Python code quality and usability.
+System instructions can precisely control code generation [[sin/Initialization/Docs/Prompting Guides/output]] by specifying documentation requirements. This guide demonstrates how requiring docstrings affects Python code quality and usability.
 
 ## Code Generation Examples
 

@@ -9,7 +9,7 @@ An [[OSINT]] Framework to perform various recon techniques, aggregate all the ra
 https://github.com/datasploit/datasploit
 
 # Overview of the tool:
-* Performs OSINT on a domain / [[sin/1. Initialization/Tools/Open WebUI Tools/Email/Email]] / username / phone and find out [[Information]] from different sources.
+* Performs OSINT on a domain / [[sin/Initialization/Tools/Open WebUI Tools/Email/Email]] / username / phone and find out [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] from different sources.
 * Correlates and collaborate the results, show them in a consolidated manner. 
 * Tries to find out credentials, api-keys, tokens, subdomains, domain history, legacy portals, etc. related to the target. 
 * Use specific script / launch automated OSINT for consolidated data.

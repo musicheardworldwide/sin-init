@@ -1,7 +1,7 @@
 # LUDA: Large URLs Dataset Analyzer for security
 
 ### Description
-Malicious actors often reuse code to deploy their malware, [[sin/1. Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]] website or CNC server. As a result, similiaries can be found on URLs path by inspecting internet traffic. Moreover, deep learning [[sin/1. Initialization/Docs/Datasets/8. Datasets]] or even regular ML model do not fit for inline deployment in terms of running performance. However, regexes ( or YARA [[sin/1. Initialization/Docs/Prompting Guides/rules]] ) can be deployed on a proxy and work in real [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] on all the traffic. LUDA can take a set of malicious and benign URLs and return a list of regexes ready to be deployed inline !
+Malicious actors often reuse code to deploy their malware, [[sin/Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]] website or CNC server. As a result, similiaries can be found on URLs path by inspecting internet traffic. Moreover, deep learning [[sin/Initialization/Docs/Datasets/8. Datasets]] or even regular ML model do not fit for inline deployment in terms of running performance. However, regexes ( or YARA [[sin/Initialization/Docs/Prompting Guides/rules]] ) can be deployed on a proxy and work in real [[sin/Initialization/Tools/MCP Server Tools/Time/time]] on all the traffic. LUDA can take a set of malicious and benign URLs and return a list of regexes ready to be deployed inline !
 
 ### Categories
 

@@ -1,15 +1,15 @@
 # [inVtero.net](https://github.com/ShaneK2/inVtero.net)
 
 ## Description
-inVtero.net: A high speed (Gbps) Forensics, [[sin/1. Initialization/Tools/MCP Server Tools/Memory/memory]] integrity & assurance. Includes offensive & defensive [[sin/1. Initialization/Tools/MCP Server Tools/Memory/memory]] capabilities.
-Find/Extract processes, hypervisors (including nested) in [[sin/1. Initialization/Tools/MCP Server Tools/Memory/memory]] dumps using microarchitechture independent Virtual Machiene Introspection
+inVtero.net: A high speed (Gbps) Forensics, [[sin/Initialization/Tools/MCP Server Tools/Memory/memory]] integrity & assurance. Includes offensive & defensive [[sin/Initialization/Tools/MCP Server Tools/Memory/memory]] capabilities.
+Find/Extract processes, hypervisors (including nested) in [[sin/Initialization/Tools/MCP Server Tools/Memory/memory]] dumps using microarchitechture independent Virtual Machiene Introspection
 techniques 
 
-Supports: VMWare (client/[[Servers]]), XEN and physical systems (PAGEDUMP).
+Supports: VMWare (client/[[sin/Initialization/Core Info/Servers]]), XEN and physical systems (PAGEDUMP).
 
 #### Integrity
 Users can manage their own "golden images" of secure hashes used to ensure no byte slipps through the cracks
-of a forensic, reverse engineering, [[sin/1. Initialization/Docs/Blackhat/sandbox|sandbox]] analysis or host integrity monitoring operation.
+of a forensic, reverse engineering, [[sin/Initialization/Docs/Blackhat/sandbox|sandbox]] analysis or host integrity monitoring operation.
 
 We've recently added cloud hosted bitmaps and are expanding this to allow users to use the integrity funtionality without having to construct
 a database first.
@@ -17,14 +17,14 @@ a database first.
 The block based integrity checks occur at a configurable size and will isolate very small code patches quickly.
 
 Integrity checking provides confidence to useres that they have analyzed "everything" and they have not wasted 
-[[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] looking in the wrong plaes.
+[[sin/Initialization/Tools/MCP Server Tools/Time/time]] looking in the wrong plaes.
 
 #### Memory Hacking
-An IronPython [[sin/1. Initialization/Tools/MCP Server Tools/Shell/shell]] is able to use native type reflection that allwos for reading and writing physical [[sin/1. Initialization/Tools/MCP Server Tools/Memory/memory]] dumps.  Test a new 
+An IronPython [[sin/Initialization/Tools/MCP Server Tools/Shell/shell]] is able to use native type reflection that allwos for reading and writing physical [[sin/Initialization/Tools/MCP Server Tools/Memory/memory]] dumps.  Test a new 
 kernel patch or improve inVtero itself.  (e.g. edit _EPROCESS objects from python and write them back to a VM image then resume
 exection to observe DMA style hacking with very easy scripts that map [[tools-export-1745623456262.json]]:[[tools-export-1745623456262.json]] to known symbol sources)
 
-Recent modules include a Gargoyle detection mechanism that uses the type [[Information]] extracted from the systems to allow for
+Recent modules include a Gargoyle detection mechanism that uses the type [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] extracted from the systems to allow for
 an exhaustive verification of thread stack states that can detect the preseanse of RoP type _weird machienes_.
 
 #### Performance
@@ -33,7 +33,7 @@ and forensic platforms that are trivially compromised.
 
 ### Categories
 * Forensics
-* Debugger (Passive [[sin/1. Initialization/Tools/MCP Server Tools/Memory/memory]] debugging/hacking)
+* Debugger (Passive [[sin/Initialization/Tools/MCP Server Tools/Memory/memory]] debugging/hacking)
 * Malware HIDS (Integrity Monitoring) 
 * Reverse Engineering
 

@@ -3,7 +3,7 @@
 # WSSAT - Web Service Security Assessment Tool
 
 ### Description
-WSSAT is an open source web service security scanning tool which provides a dynamic environment to add, update or delete vulnerabilities by just editing its configuration files. This tool accepts WSDL address list as input file and for each service, it performs both static and dynamic tests against the security vulnerabilities. It also makes [[Information]] disclosure controls.
+WSSAT is an open source web service security scanning tool which provides a dynamic environment to add, update or delete vulnerabilities by just editing its configuration files. This tool accepts WSDL address list as input file and for each service, it performs both static and dynamic tests against the security vulnerabilities. It also makes [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] disclosure controls.
 With this tool, all web services could be analysed at once and the overall security assessment could be seen by the organization.
 
 **Objectives of WSSAT are to allow organizations:**
@@ -33,8 +33,8 @@ With this tool, all web services could be analysed at once and the overall secur
 * Weak WS-SecurityPolicy: Insufficient Supporting Token Protection
 * Weak WS-SecurityPolicy: Tokens Not Protected
 
-**[[Information]] Leakage:**
-* Server or technology [[Information]] disclosure
+**[[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] Leakage:**
+* Server or technology [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] disclosure
 
 **WSSAT’s main modules are:**
 * Parser

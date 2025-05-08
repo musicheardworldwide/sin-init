@@ -4,7 +4,7 @@
 
 The OWASP Zed Attack Proxy (ZAP) is one of the world’s most popular free security [[Tools]] and is actively maintained by hundreds of international volunteers. It can help you automatically find security vulnerabilities in your web applications while you are developing and testing your applications. Its also a great tool for experienced pentesters to use for manual security testing. 
 
-Some of the built in features include: Intercepting proxy server, Traditional and AJAX Web crawlers, Automated scanner, Passive scanner, Forced browsing, Fuzzer, WebSocket support, Scripting languages, and Plug-n-Hack support. It has a plugin-based architecture and an online ‘marketplace’ which allows new or updated features to be added. The GUI control panel is easy to use, and the API [[Functions]] make it ideal for automation testing and continuous assessments in a SDLC.
+Some of the built in features include: Intercepting proxy server, Traditional and AJAX Web crawlers, Automated scanner, Passive scanner, Forced browsing, Fuzzer, WebSocket support, Scripting languages, and Plug-n-Hack support. It has a plugin-based architecture and an online ‘marketplace’ which allows new or updated features to be added. The GUI control panel is easy to use, and the API [[sin/Initialization/Docs/Open WebUI Docs/Functions/Functions]] make it ideal for automation testing and continuous assessments in a SDLC.
 
 ### Categories
 

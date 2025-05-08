@@ -4,7 +4,7 @@
 In today's technological era, docker is the most powerful technology in each and every domain, whether it is Development, cyber security, DevOps, Automation, or Infrastructure.
 
 Considering the demand of the industry, I would like to introduce my idea to create a NIGHTINGALE: docker image for pentesters.
-This docker image is ready to use environment will the required [[Tools]] that are needed at the [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] of pentesting on any of the scopes, whether it can be web application penetration testing, network penetration testing, mobile, API, OSINT, or Forensics.
+This docker image is ready to use environment will the required [[Tools]] that are needed at the [[sin/Initialization/Tools/MCP Server Tools/Time/time]] of pentesting on any of the scopes, whether it can be web application penetration testing, network penetration testing, mobile, API, OSINT, or Forensics.
 
 The best part is you can either create an altered docker image or pull the pre-built docker image from the hub.Some of the best features are listed below, I would highly recommend going through it and starting penetrating into the application. 
 

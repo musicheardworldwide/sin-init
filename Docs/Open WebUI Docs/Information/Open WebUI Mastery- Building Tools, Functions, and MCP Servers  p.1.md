@@ -1,6 +1,6 @@
 ## 📦 Part 1: Tools – Creating Callable Functions for LLMs
 
-[[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] [[Tools]] are structured Python plugins that LLMs can invoke during chats. These [[Tools]] are bound to specific [[sin/1. Initialization/Docs/Datasets/8. Datasets]] that support **function calling**, such as GPT-[[tools-export-1745623456262.json]] or Claude.
+[[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] [[Tools]] are structured Python plugins that LLMs can invoke during chats. These [[Tools]] are bound to specific [[sin/Initialization/Docs/Datasets/8. Datasets]] that support **function calling**, such as GPT-[[tools-export-1745623456262.json]] or Claude.
 
 ### 📁 Tool Structure
 
@@ -36,12 +36,12 @@ class Tools:
 * Add all metadata to the docstring to support import/export.
 * Always validate input parameters (e.g., API keys).
 * Use `Valves` for shared config.
-* Add descriptions for [[sin/1. Initialization/Docs/Datasets/8. Datasets]] understanding.
+* Add descriptions for [[sin/Initialization/Docs/Datasets/8. Datasets]] understanding.
 
 ### ⚙️ Import & Enable in Open WebUI
 
-[[tools-export-1745623456262.json]]. Import from the [[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]]: **Workspace > [[Tools]] > Import Tool**
-[[02-05-2025]]. Assign to [[sin/1. Initialization/Docs/Datasets/8. Datasets]] in **Workspace > [[sin/1. Initialization/Docs/Datasets/8. Datasets]] > [[Tools]]**
+[[tools-export-1745623456262.json]]. Import from the [[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]]: **Workspace > [[Tools]] > Import Tool**
+[[02-05-2025]]. Assign to [[sin/Initialization/Docs/Datasets/8. Datasets]] in **Workspace > [[sin/Initialization/Docs/Datasets/8. Datasets]] > [[Tools]]**
 [[tools-export-1745623456262.json]]. Optionally use the `autotool_filter` for automatic function routing.
 
 ---

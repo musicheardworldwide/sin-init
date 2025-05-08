@@ -1,7 +1,7 @@
 # OSfooler
 
 ### Description
-An outsider has the capability to discover general [[Information]], such as which operating system a host is running, by searching for default stack parameters, ambiguities in IETF RFCs or non-compliant TCP/IP implementations in responses to malformed requests. By pinpointing the exact OS of a host, an attacker can launch an educated and precise attack against a target machine.
+An outsider has the capability to discover general [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]], such as which operating system a host is running, by searching for default stack parameters, ambiguities in IETF RFCs or non-compliant TCP/IP implementations in responses to malformed requests. By pinpointing the exact OS of a host, an attacker can launch an educated and precise attack against a target machine.
 
 There are lot of reasons to hide your OS to the entire world:
  * Revealing your OS makes things easier to find and successfully run an exploit against any of your devices.
@@ -10,7 +10,7 @@ There are lot of reasons to hide your OS to the entire world:
  * It could be convenient for other software companies, to offer you a new OS environment (because they know which you are running).
  * And finally, privacy; nobody needs to know the systems you've got running.
 
-OSfooler was presented at Blackhat Arsenal 2013. It was built on NFQUEUE, an iptables/ip6tables target which delegate the decision on packets to a userspace. It transparently intercepted all traffic that your box was sending in order to camouflage and modify in real [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] the flags in TCP/IP packets that discover your system. Detects and defeat at the same [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]]:
+OSfooler was presented at Blackhat Arsenal 2013. It was built on NFQUEUE, an iptables/ip6tables target which delegate the decision on packets to a userspace. It transparently intercepted all traffic that your box was sending in order to camouflage and modify in real [[sin/Initialization/Tools/MCP Server Tools/Time/time]] the flags in TCP/IP packets that discover your system. Detects and defeat at the same [[sin/Initialization/Tools/MCP Server Tools/Time/time]]:
  * Active remote OS fingerprinting: like Nmap
  * Passive remote OS fingeprinting: like p0f v2
  * Commercial engines like Sourcefire’s FireSiGHT OS fingerprinting

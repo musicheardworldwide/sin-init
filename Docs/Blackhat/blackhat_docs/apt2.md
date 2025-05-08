@@ -17,7 +17,7 @@
 
  An Automated Penetration Testing Toolkit
 ```
-This tool will perform an NMap scan, or import the results of a scan from Nexpose, Nessus, or NMap. The processesd results will be used to launch exploit and enumeration modules according to the configurable Safe Level and enumerated service [[Information]].
+This tool will perform an NMap scan, or import the results of a scan from Nexpose, Nessus, or NMap. The processesd results will be used to launch exploit and enumeration modules according to the configurable Safe Level and enumerated service [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]].
 
 All module results are stored on localhost and are part of APT2's Knowledge Base (KB). The KB is accessible from within the application and allows the user to view the harvested results of an exploit module.
 

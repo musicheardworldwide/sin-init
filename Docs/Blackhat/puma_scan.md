@@ -1,7 +1,7 @@
 # Puma Scan
 
 ### Description
-Puma Scan is a software security Visual Studio analyzer extension built on top of Roslyn, the open-source .NET Compiler Platform. Puma Scan provides real [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]], continuous source code analysis as development teams write code. Vulnerabilities are immediately displayed in the development environment as spell check and compiler warnings, preventing security bugs from entering your applications. Simply install the plugin / NuGet package and find the following vulnerability patterns:
+Puma Scan is a software security Visual Studio analyzer extension built on top of Roslyn, the open-source .NET Compiler Platform. Puma Scan provides real [[sin/Initialization/Tools/MCP Server Tools/Time/time]], continuous source code analysis as development teams write code. Vulnerabilities are immediately displayed in the development environment as spell check and compiler warnings, preventing security bugs from entering your applications. Simply install the plugin / NuGet package and find the following vulnerability patterns:
 * Command Injection (SQL, [[LDAP]], OS Commands)
 * Cross-Site Scripting
 * Cross-Site Request Forgery

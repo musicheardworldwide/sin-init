@@ -5,7 +5,7 @@ Lazyrecon v2.[[02-05-2025]] is a wicked sick bash script, CI/CD ready subdomain 
 
 ### Categories
 * Exploitation
-* [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
+* [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
 * Vulnerability assessment
 
 ### Black Hat sessions

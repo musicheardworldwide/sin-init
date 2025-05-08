@@ -1,11 +1,11 @@
 # OWASP Offensive Web Testing Framework (OWTF)
 
 ### Description
-OWASP OWTF is a project focused on penetration testing efficiency and alignment of security tests to security standards like the OWASP Testing Guide (v3 and v4), the OWASP Top 10, PTES and NIST so that pentesters will have more [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] to:
+OWASP OWTF is a project focused on penetration testing efficiency and alignment of security tests to security standards like the OWASP Testing Guide (v3 and v4), the OWASP Top 10, PTES and NIST so that pentesters will have more [[sin/Initialization/Tools/MCP Server Tools/Time/time]] to:
 
 * See the big picture and think out of the box
 * More efficiently find, verify and combine vulnerabilities
-* Have [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] to investigate complex vulnerabilities like business logic/architectural flaws, etc.
+* Have [[sin/Initialization/Tools/MCP Server Tools/Time/time]] to investigate complex vulnerabilities like business logic/architectural flaws, etc.
 * Perform more tactical/targeted fuzzing on seemingly risky areas
 * Demonstrate true impact despite the short timeframes we are typically given to test
 

@@ -12,7 +12,7 @@ Writing a high school graduation speech with:
 - Speaker: Michael Landish, 17-year-old class president  
 - Tone: Nostalgic, optimistic  
 - Length: 250-500 words  
-- Special Considerations: Dyslexia, first-[[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] speaker, favorite teacher mention
+- Special Considerations: Dyslexia, first-[[sin/Initialization/Tools/MCP Server Tools/Time/time]] speaker, favorite teacher mention
 
 ---
 

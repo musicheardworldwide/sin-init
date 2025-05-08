@@ -1,7 +1,7 @@
 # Faraday
 
 ### Description
-Faraday®, a comprehensive platform for vulnerability management that simplifies your work automating scans and reports. A real-[[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] collaborative environment that increases transparency, speed and efficiency for your audits and for your teams. This provides greater visibility and helps you to make smarter security investments and leverage your existing [[sin/1. Initialization/Docs/Blackhat/Resources|Resources]].
+Faraday®, a comprehensive platform for vulnerability management that simplifies your work automating scans and reports. A real-[[sin/Initialization/Tools/MCP Server Tools/Time/time]] collaborative environment that increases transparency, speed and efficiency for your audits and for your teams. This provides greater visibility and helps you to make smarter security investments and leverage your existing [[sin/Initialization/Docs/Blackhat/Resources|Resources]].
 
 ### Categories
 * red-team

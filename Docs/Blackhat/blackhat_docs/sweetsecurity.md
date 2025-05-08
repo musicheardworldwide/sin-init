@@ -15,7 +15,7 @@ __Server__
 - Sweet Security code to search log data for interesting events
 - Apache/Flask web app to manage environment
 
-* More [[Information]] can be found in the Sweet Security wiki on the Github repository.
+* More [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] can be found in the Sweet Security wiki on the Github repository.
 * Slides from the public presentations are available on the Github repository. 
 
 ### Categories

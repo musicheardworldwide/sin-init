@@ -1,7 +1,7 @@
 # Userline
 
 ### Description
-This tool automates the process of creating logon relations from MS Windows Security Events by showing a graphical relation among users domains, source and destination logons, session duration, who was logged on the systems in a given datetime, session hijacking, etc. It is also able to integrate with 3rd party [[Tools]] and provides different [[sin/1. Initialization/Docs/Prompting Guides/output]] modes such as CSV [[sin/1. Initialization/Docs/Prompting Guides/output]], Neo4j, Timesketch, JSON, [[sin/1. Initialization/Tools/MCP Server Tools/SQLite/sqlite]], Gephi and Graphviz.
+This tool automates the process of creating logon relations from MS Windows Security Events by showing a graphical relation among users domains, source and destination logons, session duration, who was logged on the systems in a given datetime, session hijacking, etc. It is also able to integrate with 3rd party [[Tools]] and provides different [[sin/Initialization/Docs/Prompting Guides/output]] modes such as CSV [[sin/Initialization/Docs/Prompting Guides/output]], Neo4j, Timesketch, JSON, [[sin/Initialization/Tools/MCP Server Tools/SQLite/sqlite]], Gephi and Graphviz.
 
 ### Categories
 * Data Forensics

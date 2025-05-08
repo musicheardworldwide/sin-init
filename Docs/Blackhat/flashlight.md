@@ -1,7 +1,7 @@
 # Flashlight
 
 ### Description
-Pentesters spend too much [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] during [[Information]] gathering phase. Flashlight (Fener) provides services to scan network/ports and gather [[Information]] rapidly on target networks. So Flashlight should be the choice to automate discovery step during a penetration test. In this article, usage of Flashligh application will be explained.
+Pentesters spend too much [[sin/Initialization/Tools/MCP Server Tools/Time/time]] during [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] gathering phase. Flashlight (Fener) provides services to scan network/ports and gather [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] rapidly on target networks. So Flashlight should be the choice to automate discovery step during a penetration test. In this article, usage of Flashligh application will be explained.
 
 
 ### Categories

@@ -4,7 +4,7 @@
 
 SITCH is a distributed cellular anomaly detection and countersurveillance platform.  
 
-SITCH is comprised of a number of sensors and a central service.  Sensors are made from easily sourced hardware, and the cost of required components is around $150 each.  All [[Information]] produced by the sensors is aggregated in the service, which handles alerting and data retention.
+SITCH is comprised of a number of sensors and a central service.  Sensors are made from easily sourced hardware, and the cost of required components is around $150 each.  All [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] produced by the sensors is aggregated in the service, which handles alerting and data retention.
 
 Slides and supporting assets from the Black Hat Arsenal talk can be found [here](https://github.com/sitch-io/blackhat_arsenal_2017).
 

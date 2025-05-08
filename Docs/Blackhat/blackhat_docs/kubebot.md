@@ -3,7 +3,7 @@
 ### Description
 Kubebot is an automated scalable security testing framework based on a microservice architecture. Requests are sent to an API server which then orchestrates running the [[Tools]] as Docker containers on a Kubernetes (K8S) backend. These requests are asynchronous i.e. they get dropped in a queue which are then picked up by Subscription workers. The subscription workers start the job of running the [[Tools]]. The results of running those [[Tools]] are diff'ed and only the changes are sent back to the fronend.
 
-Kubebot uses [[sin/1. Initialization/Tools/MCP Server Tools/Slack/slack]] as the frontend - as a way to send API requests but this can be extended into different frontends as well.
+Kubebot uses [[sin/Initialization/Tools/MCP Server Tools/Slack/slack]] as the frontend - as a way to send API requests but this can be extended into different frontends as well.
 
 Kubebot also gives the flexibility of setting up scheduled job runs using the K8S cronjob.
 

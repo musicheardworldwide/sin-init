@@ -1,7 +1,7 @@
 # Open WebUI Action Functions: Technical Implementation Guide
 
 ## Core Concept
-Action [[Functions]] enable custom interactive buttons in [[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]]'s message toolbar, allowing users to trigger specific operations on chat messages.
+Action [[sin/Initialization/Docs/Open WebUI Docs/Functions/Functions]] enable custom interactive buttons in [[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]]'s message toolbar, allowing users to trigger specific operations on chat messages.
 
 ## Structural Template
 ```python
@@ -51,7 +51,7 @@ class Valves(BaseModel):
 ```
 
 ### 2. Action Function Parameters
-- `body`: Contains complete message [[sin/1. Initialization/Docs/Prompting Guides/context]] including:
+- `body`: Contains complete message [[sin/Initialization/Docs/Prompting Guides/context]] including:
   ```python
   {
       "content": "Original message text",
@@ -60,8 +60,8 @@ class Valves(BaseModel):
       "timestamp": "ISO-8601"
   }
   ```
-- `__user__`: Current user [[sin/1. Initialization/Docs/Prompting Guides/context]] (name, preferences, etc.)
-- `__event_emitter__`: Callback for real-[[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] [[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] updates
+- `__user__`: Current user [[sin/Initialization/Docs/Prompting Guides/context]] (name, preferences, etc.)
+- `__event_emitter__`: Callback for real-[[sin/Initialization/Tools/MCP Server Tools/Time/time]] [[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] updates
 - `__event_call__`: Method to request user input
 
 ## Implementation Examples

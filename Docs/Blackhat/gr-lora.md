@@ -9,7 +9,7 @@ PHYs have long been taken for granted, however research such as Travis Goodspeed
 
 With its flexible and open architecture, gr-lora gives security researchers the capability required to explore this nascent protocol from its most fundamental layer.
 
-For more [[Information]] on the LoRa PHY and Matt's blind signal analysis process:
+For more [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] on the LoRa PHY and Matt's blind signal analysis process:
 * 33c3 Video: https://media.ccc.de/v/33c3-7945-decoding_the_lora_phy
 * PoC||GTFO 0x13: https://www.alchemistowl.org/pocorgtfo/pocorgtfo13.pdf
 

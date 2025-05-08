@@ -1,7 +1,7 @@
 # WarBerryPi
 
 ### Description
-WarBerryPi was built to be used as a hardware implant during red teaming scenarios where we want to obtain as much [[Information]] as possible in a short period of [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] with being as stealth as possible. Just find a network port and plug it in. The scripts have been designed in a way that the approach is targeted to avoid noise in the network that could lead to detection and to be as efficient as possible. The WarBerry script is a collection of scanning [[Tools]] put together to provide that functionality.
+WarBerryPi was built to be used as a hardware implant during red teaming scenarios where we want to obtain as much [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] as possible in a short period of [[sin/Initialization/Tools/MCP Server Tools/Time/time]] with being as stealth as possible. Just find a network port and plug it in. The scripts have been designed in a way that the approach is targeted to avoid noise in the network that could lead to detection and to be as efficient as possible. The WarBerry script is a collection of scanning [[Tools]] put together to provide that functionality.
 
 ### Categories
 * Red Teaming

@@ -1,7 +1,7 @@
 # Betterscan
 
 ### Description
-Betterscan is a simple and powerful software to automate thousands of checks (orchestration) and eliminate human errors in Code and Cloud Infrastructure. Our software uses multiple very known and state of the art Open Source components as plugins (in that sense it is a "wrapper", "Meta" scanner) and provides you with unified one report and very fast results due to using of project state (no need to rescan the whole project every [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]]) and unification (no duplicates). Software is very modular and any Open Source tool or proprietary check can be added as a plugin. Supports all major Programming languages and Cloud technologies. Software is available as Open Source in Community Edition and paid Professional/Business variants.
+Betterscan is a simple and powerful software to automate thousands of checks (orchestration) and eliminate human errors in Code and Cloud Infrastructure. Our software uses multiple very known and state of the art Open Source components as plugins (in that sense it is a "wrapper", "Meta" scanner) and provides you with unified one report and very fast results due to using of project state (no need to rescan the whole project every [[sin/Initialization/Tools/MCP Server Tools/Time/time]]) and unification (no duplicates). Software is very modular and any Open Source tool or proprietary check can be added as a plugin. Supports all major Programming languages and Cloud technologies. Software is available as Open Source in Community Edition and paid Professional/Business variants.
 
 
 ### Categories

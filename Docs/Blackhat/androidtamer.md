@@ -1,7 +1,7 @@
 # Android Tamer
 
 ### Description
-Android Tamer project provides various [[sin/1. Initialization/Docs/Blackhat/Resources|Resources]] for Android mobile application and device security reviews. Be it pentesting, malware analysis, reverse engineering or device assessment. We strive to solve some of the major pain points in setting up the testing environments by providing various ways and means to perform the task in most effortless manner possible.
+Android Tamer project provides various [[sin/Initialization/Docs/Blackhat/Resources|Resources]] for Android mobile application and device security reviews. Be it pentesting, malware analysis, reverse engineering or device assessment. We strive to solve some of the major pain points in setting up the testing environments by providing various ways and means to perform the task in most effortless manner possible.
 
 ### Categories
 * Mobile Security

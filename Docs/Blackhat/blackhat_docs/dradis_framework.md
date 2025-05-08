@@ -1,7 +1,7 @@
 # Dradis Framework
 
 ### Description
-Dradis is an extensible, cross-platform, open source collaboration framework for InfoSec teams. It can import from over 19 popular [[Tools]], including Nessus, Qualys, Burp and AppScan. Started in 2007 (this is the 10th year anniversary!), Dradis Framework has been growing ever since (10,000+ commits in the last 12 months). Dradis is the best tool to combine the [[sin/1. Initialization/Docs/Prompting Guides/output]] of different scanners, add your manual findings and evidence and generate a report with one click.
+Dradis is an extensible, cross-platform, open source collaboration framework for InfoSec teams. It can import from over 19 popular [[Tools]], including Nessus, Qualys, Burp and AppScan. Started in 2007 (this is the 10th year anniversary!), Dradis Framework has been growing ever since (10,000+ commits in the last 12 months). Dradis is the best tool to combine the [[sin/Initialization/Docs/Prompting Guides/output]] of different scanners, add your manual findings and evidence and generate a report with one click.
 
 Free forever and open source.
 

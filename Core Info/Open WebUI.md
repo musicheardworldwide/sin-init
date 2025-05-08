@@ -1,6 +1,6 @@
 ### What is **Open WebUI**?
 
-[[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] is an open-source web-based user interface designed to interact with large language [[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]] (LLMs) and agents in a structured, extensible, and user-friendly way. It supports:
+[[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] is an open-source web-based user interface designed to interact with large language [[sin/Initialization/Docs/Datasets/8. Datasets|8. Datasets]] (LLMs) and agents in a structured, extensible, and user-friendly way. It supports:
 
 - **Custom tools** and agents
     
@@ -8,14 +8,14 @@
     
 - **Code execution backends**
     
-- **Interfacing with local or remote [[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]] APIs**
+- **Interfacing with local or remote [[sin/Initialization/Docs/Datasets/8. Datasets|8. Datasets]] APIs**
     
 - **Multi-agent interactions**
     
-- **[[sin/1. Initialization/Tools/MCP Server Tools/Memory/memory|memory]] and [[sin/1. Initialization/Docs/Prompting Guides/context|context]] management**
+- **[[sin/Initialization/Tools/MCP Server Tools/Memory/memory|memory]] and [[sin/Initialization/Docs/Prompting Guides/context|context]] management**
     
 
-It’s often paired with backends like Open Interpreter, LM Studio, or custom [[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]] APIs to serve as the control panel for complex [[sin/1. Initialization/SIN/Sin (Symbiotic Intelligence Nexus)|Sin (Symbiotic Intelligence Nexus)]] workflows.
+It’s often paired with backends like Open Interpreter, LM Studio, or custom [[sin/Initialization/Docs/Datasets/8. Datasets|8. Datasets]] APIs to serve as the control panel for complex [[sin/Initialization/SIN/Sin (Symbiotic Intelligence Nexus)|Sin (Symbiotic Intelligence Nexus)]] workflows.
 
 ---
 

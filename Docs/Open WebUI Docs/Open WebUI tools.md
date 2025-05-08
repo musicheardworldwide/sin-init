@@ -288,7 +288,7 @@ async def sensitive_operation(self, __event_call__=None):
 
 [[tools-export-1745623456262.json]]. **Type Hinting**: Always use Python type hints for all parameters and return values
 [[02-05-2025]]. **Error Handling**: Implement comprehensive error handling with user feedback
-[[tools-export-1745623456262.json]]. **Resource Management**: Use [[sin/1. Initialization/Docs/Prompting Guides/context]] managers for external connections
+[[tools-export-1745623456262.json]]. **Resource Management**: Use [[sin/Initialization/Docs/Prompting Guides/context]] managers for external connections
 [[tools-export-1745623456262.json]]. **Documentation**: Provide detailed docstrings with examples
 [[02-05-2025]]. **Configuration**: Expose essential parameters through Valves/UserValves
 6. **Performance**: Implement asynchronous operations for I/O-bound tasks

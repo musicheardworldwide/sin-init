@@ -3,10 +3,10 @@
 ### Description
 A (relatively) Unopinionated framework that faciliates Threat Modeling as Code married with Application Security Automation on a single Fabric. 
 
-ThreatPlaybook was born in we45, as a framework to capture Threat [[sin/1. Initialization/Docs/Datasets/8. Datasets]] for our internal Projects (especially Pentests). We have built it with the following parameters in mind: 
-* Threat [[sin/1. Initialization/Docs/Datasets/8. Datasets]] as Code: Codify Threat [[sin/1. Initialization/Docs/Datasets/8. Datasets]] by Capturing User Stories => Abuser Stories => Threat [[sin/1. Initialization/Docs/Datasets/8. Datasets]]/Scenarios and Test Cases in YAML files that can be parsed and processed by another system
+ThreatPlaybook was born in we45, as a framework to capture Threat [[sin/Initialization/Docs/Datasets/8. Datasets]] for our internal Projects (especially Pentests). We have built it with the following parameters in mind: 
+* Threat [[sin/Initialization/Docs/Datasets/8. Datasets]] as Code: Codify Threat [[sin/Initialization/Docs/Datasets/8. Datasets]] by Capturing User Stories => Abuser Stories => Threat [[sin/Initialization/Docs/Datasets/8. Datasets]]/Scenarios and Test Cases in YAML files that can be parsed and processed by another system
 * Capture Security Test Cases: Security Test Cases are descriptions of techniques used by security testers to test for specific vulnerabilities. These may include SAST, DAST [[Tools]], SCA [[Tools]], Reconnaissance [[Tools]] and so on
-* Leverage Security Automation: Inspired the Playbook style [[sin/1. Initialization/Docs/Datasets/8. Datasets]] of Ansible, Kubernetes, Metta and so on, we wanted to create framework that could amalgamate Threat [[sin/1. Initialization/Docs/Datasets/8. Datasets]], Test Cases and running of targeted Security Automation. We have used the Robot Framework to process the Threat [[sin/1. Initialization/Docs/Datasets/8. Datasets]] and run the Security Automation Test Cases
+* Leverage Security Automation: Inspired the Playbook style [[sin/Initialization/Docs/Datasets/8. Datasets]] of Ansible, Kubernetes, Metta and so on, we wanted to create framework that could amalgamate Threat [[sin/Initialization/Docs/Datasets/8. Datasets]], Test Cases and running of targeted Security Automation. We have used the Robot Framework to process the Threat [[sin/Initialization/Docs/Datasets/8. Datasets]] and run the Security Automation Test Cases
 
 ### Categories
 

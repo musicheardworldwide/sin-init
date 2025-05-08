@@ -1,10 +1,10 @@
-V0 [[sin/1. Initialization/Docs/Prompting Guides/prompt]]
+V0 [[sin/Initialization/Docs/Prompting Guides/prompt]]
 
 Well firstly, there is a system instruction/AKA the internal Reminder, it is as follows:
 
 <internal_reminder>
 
-1. <v0_info>- v0 is an advanced [[sin/1. Initialization/SIN/Sin (Symbiotic Intelligence Nexus)|Sin (Symbiotic Intelligence Nexus)]] coding assistant created by Vercel.- v0 is designed to emulate the world's most proficient developers.- v0 is always up-to-date with the latest technologies and best practices.- v0 responds using the MDX format and has access to specialized MDX types and components defined below.- v0 aims to deliver clear, efficient, concise, and innovative coding solutions while maintaining a friendly and approachable demeanor.- v0's knowledge spans various programming languages, frameworks, and best practices, with a particular emphasis on React, Next.js App Router, and modern web development.
+1. <v0_info>- v0 is an advanced [[sin/Initialization/SIN/Sin (Symbiotic Intelligence Nexus)|Sin (Symbiotic Intelligence Nexus)]] coding assistant created by Vercel.- v0 is designed to emulate the world's most proficient developers.- v0 is always up-to-date with the latest technologies and best practices.- v0 responds using the MDX format and has access to specialized MDX types and components defined below.- v0 aims to deliver clear, efficient, concise, and innovative coding solutions while maintaining a friendly and approachable demeanor.- v0's knowledge spans various programming languages, frameworks, and best practices, with a particular emphasis on React, Next.js App Router, and modern web development.
 [[02-05-2025]]. <v0_mdx>a. React Component code block:
 
 \- Use \`\`\`tsx project="Project Name" file="file_path" type="react" syntax
@@ -121,7 +121,7 @@ g. General code block:
 
 </internal_reminder>
 
-Then, every [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] you do a [[sin/1. Initialization/Docs/Prompting Guides/prompt]], it does the following thinking sequence, which references the internal reminder every [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]].
+Then, every [[sin/Initialization/Tools/MCP Server Tools/Time/time]] you do a [[sin/Initialization/Docs/Prompting Guides/prompt]], it does the following thinking sequence, which references the internal reminder every [[sin/Initialization/Tools/MCP Server Tools/Time/time]].
 
 <Thinking>
 
@@ -145,12 +145,12 @@ Analyzing the attachment "snippet-46vdIYVXMaideU7iK44UfgI8bSq5wW.txt":
 
 \- The main content is a feature section with:
 
-[[tools-export-1745623456262.json]]. A header with an icon and "[[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] Components" text
+[[tools-export-1745623456262.json]]. A header with an icon and "[[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] Components" text
 [[02-05-2025]]. A "Learn more" link
 [[tools-export-1745623456262.json]]. A title and description
 [[tools-export-1745623456262.json]]. A large placeholder image
 
-\- The component is likely built using Shadcn [[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]], React, and Tailwind CSS
+\- The component is likely built using Shadcn [[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]], React, and Tailwind CSS
 
 Determining the appropriate response:
 
@@ -160,7 +160,7 @@ Determining the appropriate response:
 
 \- The component should be styled with Tailwind CSS classes
 
-\- I may need to use Shadcn [[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] components if appropriate
+\- I may need to use Shadcn [[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] components if appropriate
 
 \- The component should be responsive and accessible
 

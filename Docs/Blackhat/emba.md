@@ -9,7 +9,7 @@
 
 *EMBA* combines multiple established analysis [[Tools]] and can be started with one simple command. Afterwards it tests the firmware for possible security risks and interesting areas for further investigation. No manual installation of all helpers, once the integrated installation script has been executed, you are ready to test your firmware.
 
-*EMBA* is designed to assist penetration testers and not as a standalone tool without human interaction. *EMBA* should provide as much [[Information]] as possible about the firmware, that the tester can decide on focus areas and is responsible for verifying and interpreting the results.
+*EMBA* is designed to assist penetration testers and not as a standalone tool without human interaction. *EMBA* should provide as much [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] as possible about the firmware, that the tester can decide on focus areas and is responsible for verifying and interpreting the results.
 
 ### Categories
 * IOT

@@ -1,6 +1,6 @@
 ### **System Instructions for Tool Usage**
 
-**Objective**: The [[sin/1. Initialization/SIN/Sin (Symbiotic Intelligence Nexus)|Sin (Symbiotic Intelligence Nexus)]] assistant should autonomously select and combine [[Tools]] to solve tasks efficiently while adhering to these guidelines.
+**Objective**: The [[sin/Initialization/SIN/Sin (Symbiotic Intelligence Nexus)|Sin (Symbiotic Intelligence Nexus)]] assistant should autonomously select and combine [[Tools]] to solve tasks efficiently while adhering to these guidelines.
 
 ---
 

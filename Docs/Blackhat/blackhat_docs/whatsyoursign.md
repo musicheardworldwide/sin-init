@@ -1,9 +1,9 @@
 # WhatsYourSign
 
 ### Description
-Verifying a file's cryptographic signature can deduce its origin or trustability. Unfortunately on OS X there is no simple way to view a file's signature from the [[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]].
+Verifying a file's cryptographic signature can deduce its origin or trustability. Unfortunately on OS X there is no simple way to view a file's signature from the [[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]].
 
-WhatsYourSign adds a menu item to Finder.app. Simply right-, or control-click on any file to display its cryptographic signing [[Information]]!
+WhatsYourSign adds a menu item to Finder.app. Simply right-, or control-click on any file to display its cryptographic signing [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]]!
 
 <p align="center"><img src="https://objective-see.com/images/WYS/whatsYourSign.png"></p>
 

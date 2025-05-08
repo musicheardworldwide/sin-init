@@ -7,14 +7,14 @@ The full version of DefPloreX includes:
 
   * A thin wrapper to interact with an Elasticsearch backend (included in this release)
   * A distributed data-processing pipeline based on Celery (example included in this release)
-  * An analysis component to extract [[Information]] from deface web pages
+  * An analysis component to extract [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] from deface web pages
   * A features extraction component to produce a compact, numerical and categorical representation of each web page
   * A statistical machine-learning component to automatically find groups of similar web pages
 
 The input to DefPloreX is a feed of URLs describing the deface web pages,
 including metadata such as the (declared) attacker name, timestamp, reason
 for hacking that page, and so on. Separately, we also have a mirror of the
-web pages at the [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] of compromise.
+web pages at the [[sin/Initialization/Tools/MCP Server Tools/Time/time]] of compromise.
 
 ### Categories
 * OSINT

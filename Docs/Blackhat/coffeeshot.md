@@ -10,13 +10,13 @@ CoffeeShot assists blue team members in assessing the effectiveness of their ant
 
 CoffeShot utilizes JNA (Java Native Access) to inject payload from Java-based programs into designated processes on Microsoft Windows.
 
-The [[sin/1. Initialization/Tools/MCP Server Tools/Memory/memory]] injection methods that CoffeeShot employs are straightforward and are well-known in the [[sin/1. Initialization/Docs/Prompting Guides/context]] of traditional, compiled executables. The effectiveness of these techniques at evading AV when they’re implemented in Java, highlights the brittle nature even by modern antivirus [[Tools]].
+The [[sin/Initialization/Tools/MCP Server Tools/Memory/memory]] injection methods that CoffeeShot employs are straightforward and are well-known in the [[sin/Initialization/Docs/Prompting Guides/context]] of traditional, compiled executables. The effectiveness of these techniques at evading AV when they’re implemented in Java, highlights the brittle nature even by modern antivirus [[Tools]].
 
 ### Categories
 * Frameworks
 * Security Testing
 * Red Team
-* [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
+* [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
 * Post Exploitation
 
 ### Black Hat sessions

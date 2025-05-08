@@ -1,7 +1,7 @@
 # Lynis
 
 ### Description
-Lynis is a security auditing tool for sytems running Linux, macOS, BSD, and other flavors of Unix. The tool performs an in-depth security scan and runs on the system itself. The primary goal is to test security defenses and provide tips for further system hardening. It will also scan for general system [[Information]], vulnerable software packages, and possible configuration issues. As Lynis is written in POSIX [[sin/1. Initialization/Tools/MCP Server Tools/Shell/shell]] script, it is light on [[sin/1. Initialization/Docs/Blackhat/Resources|Resources]] and low on dependencies. This makes the tool great for putting it in build pipelines, running it as part of a forensics task or as penetration testing tool during an assignment.
+Lynis is a security auditing tool for sytems running Linux, macOS, BSD, and other flavors of Unix. The tool performs an in-depth security scan and runs on the system itself. The primary goal is to test security defenses and provide tips for further system hardening. It will also scan for general system [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]], vulnerable software packages, and possible configuration issues. As Lynis is written in POSIX [[sin/Initialization/Tools/MCP Server Tools/Shell/shell]] script, it is light on [[sin/Initialization/Docs/Blackhat/Resources|Resources]] and low on dependencies. This makes the tool great for putting it in build pipelines, running it as part of a forensics task or as penetration testing tool during an assignment.
 
 ### Categories
 * Hardening

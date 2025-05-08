@@ -2,7 +2,7 @@
 
 ### Description
 Python Multi Threaded Tor Proxy,  
-Did you ever want to be at two different places at the same [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]]?  
+Did you ever want to be at two different places at the same [[sin/Initialization/Tools/MCP Server Tools/Time/time]]?  
 When I asked myself this question, I actually started developing this solution in my mind.  
 While performing penetration tests there are often problems caused by security devices that block the "attacking" IP.  
 This really annoyed me, so I wrote a script to supply a solution for this problem.  

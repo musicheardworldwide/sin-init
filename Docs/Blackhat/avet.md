@@ -17,7 +17,7 @@ What & Why:
 ### Categories
 * Exploitation
 * Vulnerability assessment
-* [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
+* [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
 
 ### Black Hat sessions
 [![Arsenal](https://rawgit.com/toolswatch/badges/master/arsenal/asia/2017.svg)](https://www.toolswatch.org/2017/02/the-black-hat-arsenal-asia-2017-great-line-up/)

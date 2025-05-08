@@ -2,7 +2,7 @@
 
 ## Core Architecture
 
-Pipe [[Functions]] enable custom model integration in [[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] through a plugin system with three key components:
+Pipe [[sin/Initialization/Docs/Open WebUI Docs/Functions/Functions]] enable custom model integration in [[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] through a plugin system with three key components:
 
 [[tools-export-1745623456262.json]]. **Valves**: Runtime-configurable parameters (persistent settings)
 [[02-05-2025]]. **pipes()**: Model registration and discovery

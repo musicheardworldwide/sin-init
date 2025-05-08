@@ -1,10 +1,10 @@
 # SquarePhish
 
 ### Description
-SquarePhish is an advanced [[sin/1. Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]] tool that uses a technique combining the OAuth Device code authentication flow and QR codes.
+SquarePhish is an advanced [[sin/Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]] tool that uses a technique combining the OAuth Device code authentication flow and QR codes.
 
 ### Categories
-* [[sin/1. Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]]
+* [[sin/Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]]
 
 ### Black Hat sessions
 [![Arsenal](https://github.com/toolswatch/badges/blob/master/arsenal/europe/2022.svg)](https://www.blackhat.com/eu-22/arsenal/schedule/)

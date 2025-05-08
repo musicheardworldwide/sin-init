@@ -1,7 +1,7 @@
 # DYODE
 
 ### Description
-DYODE (Do Your Own Dyode) is a low cost, DIY data diode aimed at securing Industrial Control Systems. While data diodes have been used for a long [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] on classified networks, the high cost and complexity of implementation have kept them away from a lot of valid use cases on industrial control systems. During our assignments, we encountered many situations in which [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] or availability constraints were not really high -but the security risk was- and a commercial data diode way too costly.
+DYODE (Do Your Own Dyode) is a low cost, DIY data diode aimed at securing Industrial Control Systems. While data diodes have been used for a long [[sin/Initialization/Tools/MCP Server Tools/Time/time]] on classified networks, the high cost and complexity of implementation have kept them away from a lot of valid use cases on industrial control systems. During our assignments, we encountered many situations in which [[sin/Initialization/Tools/MCP Server Tools/Time/time]] or availability constraints were not really high -but the security risk was- and a commercial data diode way too costly.
 
 ### Categories
 * ICS

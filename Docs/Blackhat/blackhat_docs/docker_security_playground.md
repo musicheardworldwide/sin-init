@@ -6,7 +6,7 @@
 
 Docker Security Playground is a framework that allows you to: 
 - Create **network and network security scenarios**, in order to understand all the network protocols,  
-[[sin/1. Initialization/Docs/Prompting Guides/rules]], and security issues with host networks. . 
+[[sin/Initialization/Docs/Prompting Guides/rules]], and security issues with host networks. . 
 - Learn **penetration testing techniques** by simulating vulnerability labs scenarios
 -  **Manage a set of docker-compose project** . Main goal of DSP is to skilling in penetration testing and network security, but his flexibility allows you the 
 **creation**, **graphic editing** and **managment run / stop** of all your **docker-compose
@@ -16,7 +16,7 @@ labs**.
 * Frameworks
 * Security Testing
 * Red Team
-* [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
+* [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
 * Post Exploitation
 
 ### Black Hat sessions

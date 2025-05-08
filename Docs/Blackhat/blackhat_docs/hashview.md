@@ -1,7 +1,7 @@
 # Hashview
 
 ### Description
-Hashview is a web front-end to hashcat with many powerful features geared towards penetration testers. Leverage task automation and real-[[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] analytics for increased results and fancy reports.
+Hashview is a web front-end to hashcat with many powerful features geared towards penetration testers. Leverage task automation and real-[[sin/Initialization/Tools/MCP Server Tools/Time/time]] analytics for increased results and fancy reports.
 
 ### Categories
 * Cryptography

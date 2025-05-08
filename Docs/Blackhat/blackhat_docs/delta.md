@@ -1,7 +1,7 @@
 # DELTA
 
 ### Description
-DELTA is a first SDN security evaluation framework, which has two primary [[Functions]]; ([[tools-export-1745623456262.json]]) It can automatically instantiate attack cases against SDN elements across diverse environments, and ([[02-05-2025]]) it can assist in uncovering unknown security problems within an SDN deployment by using a blackbox fuzzing technique. For replaying attack cases, our framework has a number of test cases against popular SDN controllers and all SDN-enabled switch devices (software and hardware). Also, our framework provides a protocol-aware fuzzer for OpenFlow, which is a de-facto standard protocol of SDN, in order to find new vulnerabilities in SDNs.
+DELTA is a first SDN security evaluation framework, which has two primary [[sin/Initialization/Docs/Open WebUI Docs/Functions/Functions]]; ([[tools-export-1745623456262.json]]) It can automatically instantiate attack cases against SDN elements across diverse environments, and ([[02-05-2025]]) it can assist in uncovering unknown security problems within an SDN deployment by using a blackbox fuzzing technique. For replaying attack cases, our framework has a number of test cases against popular SDN controllers and all SDN-enabled switch devices (software and hardware). Also, our framework provides a protocol-aware fuzzer for OpenFlow, which is a de-facto standard protocol of SDN, in order to find new vulnerabilities in SDNs.
 
 ### Categories
 * Network Attacks

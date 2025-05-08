@@ -3,11 +3,11 @@
 ### Description
 Since the release of the Log4Shell vulnerability (CVE-2021-44228), many [[Tools]] were created to obfuscate Log4Shell payloads, making the lives of security engineers a nightmare.
 
-Threat actors tend to apply obfuscation techniques to their payloads for several reasons. Most security protection [[Tools]], such as web application firewalls (WAFs), rely on [[sin/1. Initialization/Docs/Prompting Guides/rules]] to match malicious patterns. By using obfuscated payloads, threat actors are able to circumvent the [[sin/1. Initialization/Docs/Prompting Guides/rules]] logic and bypass security measures. Moreover, obfuscated payloads increase analysis complexity and, depending upon the degree of obfuscation, can also prevent them from being reverse-engineered.
+Threat actors tend to apply obfuscation techniques to their payloads for several reasons. Most security protection [[Tools]], such as web application firewalls (WAFs), rely on [[sin/Initialization/Docs/Prompting Guides/rules]] to match malicious patterns. By using obfuscated payloads, threat actors are able to circumvent the [[sin/Initialization/Docs/Prompting Guides/rules]] logic and bypass security measures. Moreover, obfuscated payloads increase analysis complexity and, depending upon the degree of obfuscation, can also prevent them from being reverse-engineered.
 
-Decoding and analyzing obfuscated payloads is [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]]-consuming and often results in inaccurate data. However, doing so is crucial for understanding attackers' intentions.
+Decoding and analyzing obfuscated payloads is [[sin/Initialization/Tools/MCP Server Tools/Time/time]]-consuming and often results in inaccurate data. However, doing so is crucial for understanding attackers' intentions.
 
-We believe that security teams around the world can benefit from using Ox4Shell to dramatically reduce their analysis [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]]. To help the security community, we have decided to release Ox4Shell - a payload deobfuscation tool that would make your life much easier.
+We believe that security teams around the world can benefit from using Ox4Shell to dramatically reduce their analysis [[sin/Initialization/Tools/MCP Server Tools/Time/time]]. To help the security community, we have decided to release Ox4Shell - a payload deobfuscation tool that would make your life much easier.
 
 ### Categories
 * Reverse Engineering

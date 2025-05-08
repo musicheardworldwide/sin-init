@@ -3,7 +3,7 @@
 ### Description
 FileInsight-plugins is a large set of plugins for McAfee FileInsight hex editor. It adds many capabilities such as decode, decryption, decompression, searching XOR-ed text strings, scanning with a YARA rule, code emulation, disassembly, and more! It is useful for various kinds of decoding tasks in malware analysis (such as extracting malware executable files from malicious document files, deobfuscation of malicious scripts).
 
-Currently, FileInsight-plugins has 116 plugins. The plugins provide the following [[Functions]] and many other [[Functions]].
+Currently, FileInsight-plugins has 116 plugins. The plugins provide the following [[sin/Initialization/Docs/Open WebUI Docs/Functions/Functions]] and many other [[sin/Initialization/Docs/Open WebUI Docs/Functions/Functions]].
 
 - Calculation of hash values (CRC32, MD5, SHA1, SHA256, ssdeep, imphash, impfuzzy)
 - Search for XORed, bit-rotated text strings and byte arrays
@@ -13,10 +13,10 @@ Currently, FileInsight-plugins has 116 plugins. The plugins provide the followin
 - Compression and decompression (aPLib, Bzip2, Deflate, Gzip, LZ4, LZMA, LZNT1, LZO, PPMd, QuickLZ, XZ, Zstandard)
 - Detection of embedded files in a file
 - Extraction of text strings of ASCII and UTF-16 with auto decode of hex string and BASE64 strings
-- Scanning with YARA and highlighting regions that match YARA [[sin/1. Initialization/Docs/Prompting Guides/rules]]
+- Scanning with YARA and highlighting regions that match YARA [[sin/Initialization/Docs/Prompting Guides/rules]]
 - Showing file metadata
 - Parsing file structure (Gzip, RAR, ZIP, ELF, PE, MBR partition table, BMP, GIF, JPEG, PNG, Windows shortcut)
-- Code emulation of shellcodes and executable files (Windows (x64, x86) and Linux (x64, x86, ARM, ARM64, MIPS)) with API call tracing and capturing [[sin/1. Initialization/Tools/MCP Server Tools/Memory/memory]] dumps
+- Code emulation of shellcodes and executable files (Windows (x64, x86) and Linux (x64, x86, ARM, ARM64, MIPS)) with API call tracing and capturing [[sin/Initialization/Tools/MCP Server Tools/Memory/memory]] dumps
 - Disassembly (x64, x86, ARM, ARM64, MIPS, PowerPC, PowerPC64, SPARC)
 - Opening data with other [[Tools]] such as CyberChef, IDA, and VSCode (customizable with JSON config file).
 - Visualization (Bitmap, Byte histogram, Entropy graph)

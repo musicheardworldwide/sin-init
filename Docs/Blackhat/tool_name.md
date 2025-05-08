@@ -1,10 +1,10 @@
-**THIS IS A SAMPLE. MODIFY THE [[Information]] TO REFLECT YOUR TOOL. HEY, REMOVE THIS WARNING BEFORE SUBMISSION**
+**THIS IS A SAMPLE. MODIFY THE [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] TO REFLECT YOUR TOOL. HEY, REMOVE THIS WARNING BEFORE SUBMISSION**
 
 **DO NOT REMOVE THIS FILE**
 # Lynis
 
 ### Description
-[[sin/1. Initialization/Docs/Blackhat/lynis|lynis]] is a security auditing for UNIX derivatives like Linux, macOS, BSD, and others. It performs an in-depth security scan and runs on the system itself. The primary goal is to test security defenses and provide tips for further system hardening. It will also scan for general system [[Information]], vulnerable software packages, and possible configuration issues. [[sin/1. Initialization/Docs/Blackhat/lynis|lynis]] was commonly used by people in the "blue team" to assess the security defenses of their systems. Nowadays, penetration testers also have [[sin/1. Initialization/Docs/Blackhat/lynis|lynis]] in their toolkit.
+[[sin/Initialization/Docs/Blackhat/lynis|lynis]] is a security auditing for UNIX derivatives like Linux, macOS, BSD, and others. It performs an in-depth security scan and runs on the system itself. The primary goal is to test security defenses and provide tips for further system hardening. It will also scan for general system [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]], vulnerable software packages, and possible configuration issues. [[sin/Initialization/Docs/Blackhat/lynis|lynis]] was commonly used by people in the "blue team" to assess the security defenses of their systems. Nowadays, penetration testers also have [[sin/Initialization/Docs/Blackhat/lynis|lynis]] in their toolkit.
 
 ### Categories
 * Hardening
@@ -32,7 +32,7 @@ ToolsWatch Annual Best Free/Open Source Security Tool Survey:
 Check the valid links and badges in **badge**
 
 ### Code
-https://github.com/CISOfy/[[[[[[sin/1. Initialization/Docs/Blackhat/6. Blackhat|6. Blackhat]]]]/[[sin/1. Initialization/Docs/Blackhat/lynis|lynis]]|[[sin/1. Initialization/Docs/Blackhat/lynis|lynis]]]]
+https://github.com/CISOfy/[[[[[[sin/1. Initialization/Docs/Blackhat/6. Blackhat|6. Blackhat]]]]/[[sin/Initialization/Docs/Blackhat/lynis|lynis]]|[[sin/Initialization/Docs/Blackhat/lynis|lynis]]]]
 
 ### Lead Developer(s)
  Michael Boelen - Cisofy https://github.com/CISOfy

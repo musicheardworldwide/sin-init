@@ -7,7 +7,7 @@
 - CTF Hacker101
   - The Hacker101 CTF is a game designed to let you learn to hack in a safe, rewarding environment. Hacker101 is a free educational site for hackers.
 - Hack The Box
-  - Penetration Testing Labs An online platform to test and advance your skills in penetration testing and cyber security. Join today and start [[sin/1. Initialization/Docs/Datasets/8. Datasets]] in our online labs.
+  - Penetration Testing Labs An online platform to test and advance your skills in penetration testing and cyber security. Join today and start [[sin/Initialization/Docs/Datasets/8. Datasets]] in our online labs.
 - CTF365
   - An account based ctf site, awarded by Kaspersky, MIT, T-Mobile.
 - Backdoor
@@ -37,7 +37,7 @@
 
 ### Off-Line
 
-- Damn Vulnerable Xebia [[sin/1. Initialization/Docs/Datasets/8. Datasets]] Environment
+- Damn Vulnerable Xebia [[sin/Initialization/Docs/Datasets/8. Datasets]] Environment
   - Docker Container including several vurnerable web applications (DVWA,DVWServices, DVWSockets, WebGoat, Juiceshop, Railsgoat, django.NV, Buggy Bank, Mutilidae II and more)
 - OWASP Vulnerable Web Applications Directory Project
   - List of offline available vulnerable applications for learning purposes
@@ -48,7 +48,7 @@
 
 #### Vulnerability Databases And Resources
 
-- Vulnerability Databases are the first place to start your day as a security professional. Any new vulnerability detection is generally available through the public vulnerability databases. These databases are a big source of [[Information]] for hackers to be able to understand and exploit/avoid/fix the vulnerability.
+- Vulnerability Databases are the first place to start your day as a security professional. Any new vulnerability detection is generally available through the public vulnerability databases. These databases are a big source of [[sin/Initialization/Docs/Open WebUI Docs/Information/Information]] for hackers to be able to understand and exploit/avoid/fix the vulnerability.
 
 http://www.exploit-db.com/
 http://1337day.com/
@@ -90,12 +90,12 @@ Malware traffic analysis list of traffic analysis exercises
 - Computer Systems Security, MIT
 - cisco's cources [[tools-export-1745623456262.json]].cybrary [[tools-export-1745623456262.json]].hackers academy
 
-For those who want to do CEH, the following are for you. [[02-05-2025]]. CBT Nuggets CEH [[sin/1. Initialization/Docs/Datasets/8. Datasets]] [[tools-export-1745623456262.json]]. CEH Books [[tools-export-1745623456262.json]]. Guide to Binary Exploitation
+For those who want to do CEH, the following are for you. [[02-05-2025]]. CBT Nuggets CEH [[sin/Initialization/Docs/Datasets/8. Datasets]] [[tools-export-1745623456262.json]]. CEH Books [[tools-export-1745623456262.json]]. Guide to Binary Exploitation
 
 ### Workshops/Playlists
 
 - Web Hacking
-- [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]], A Comprehensive Playlist covering - almost everything
+- [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]], A Comprehensive Playlist covering - almost everything
 - Security Talks and Conferences
 - InfoCon - Hacking Conference Archive
 - Curated list of Security Talks and Videos

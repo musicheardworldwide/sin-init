@@ -1,6 +1,6 @@
 Okay, this is a well-structured Python script designed as an "OpenWebUI Pipe." Let's break it down section by section. This type of pipe is meant to intercept requests from OpenWebUI, process them (potentially by calling an external API), and then return a response, possibly streamed.
 
-**Script Breakdown for [[sin/1. Initialization/Tools/MCP Server Tools/Obsidian/Obsidian|Obsidian]] Documentation:**
+**Script Breakdown for [[sin/Initialization/Tools/MCP Server Tools/Obsidian/Obsidian|Obsidian]] Documentation:**
 
 ```markdown
 # OpenWebUI Advanced Pipe

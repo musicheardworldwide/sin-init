@@ -1,7 +1,7 @@
 # Zenected Threat Defense VPN
 
 ### Description
-__Zenected__ is a cloud based security threat protection service. It’s delivered through a set of pre-configured services. Once a user connects to the __Zenected__, that user’s network traffic is filtered to keep the bad things out (e.g. [[sin/1. Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]] sites, malware). The only thing this a user has to configure on the endpoint device (be it a mobile device, a desktop or laptop or IoT device) is a VPN connection.
+__Zenected__ is a cloud based security threat protection service. It’s delivered through a set of pre-configured services. Once a user connects to the __Zenected__, that user’s network traffic is filtered to keep the bad things out (e.g. [[sin/Initialization/Docs/Blackhat/ethical hacking/Phishing/Phishing]] sites, malware). The only thing this a user has to configure on the endpoint device (be it a mobile device, a desktop or laptop or IoT device) is a VPN connection.
 
 All services are updated every hour with a new set of threat indicators prepared by Perun Works.
 
@@ -15,7 +15,7 @@ If you are a __Zenected__ end-user what you will like about it, is:
 - no need to install additional software on your mobile phone, tablet or laptop – __Zenected__ uses standard OS features build-in into all modern systems
 - if you encounter a certain resource blocked by the system, you can request an exception. Each exception is then reviewed by an administrator.
 
-For more info and [[sin/1. Initialization/Docs/Blackhat/Resources|Resources]] visit: https://zenected.com
+For more info and [[sin/Initialization/Docs/Blackhat/Resources|Resources]] visit: https://zenected.com
 
 ### Categories
 * Network Defense

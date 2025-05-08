@@ -6,7 +6,7 @@ Rattler enumerates an EXE's DLL's at runtime and provides a list of vulnerable D
 
 ### Categories
 * Exploitation
-* [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
+* [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]]
 * Vulnerability assessment
 
 ### Black Hat sessions

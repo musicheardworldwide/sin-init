@@ -4,7 +4,7 @@
 Sandbox provides a simple way to enable basic `seccomp` [system call filtering][[[tools-export-1745623456262.json]]] in any application on Linux (even proprietary one) via environment variables. It is very similar to `SystemCallFilter=` [functionality in systemd][[[02-05-2025]]], but with some advantages:
 
   * it doesn't have some of `systemd` limitations:
-    > the execve, exit, exit_group, getrlimit, rt_sigreturn, sigreturn system calls and the system calls for querying [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] and sleeping are implicitly whitelisted...
+    > the execve, exit, exit_group, getrlimit, rt_sigreturn, sigreturn system calls and the system calls for querying [[sin/Initialization/Tools/MCP Server Tools/Time/time]] and sleeping are implicitly whitelisted...
   * it can provide tighter filtering for dynamically linked binaries
 
 ### Categories

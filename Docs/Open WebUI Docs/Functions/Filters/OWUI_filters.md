@@ -2,9 +2,9 @@
 
 ## Core Concepts
 
-Filter [[Functions]] are middleware components that transform data in [[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]]'s processing pipeline. They operate at two critical points:
+Filter [[sin/Initialization/Docs/Open WebUI Docs/Functions/Functions]] are middleware components that transform data in [[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]]'s processing pipeline. They operate at two critical points:
 
-[[tools-export-1745623456262.json]]. **Inlet Function**: Modifies user inputs before reaching the [[sin/1. Initialization/Docs/Datasets/8. Datasets]]
+[[tools-export-1745623456262.json]]. **Inlet Function**: Modifies user inputs before reaching the [[sin/Initialization/Docs/Datasets/8. Datasets]]
 [[02-05-2025]]. **Outlet Function**: Processes model outputs before displaying to users
 
 ## Structural Anatomy
@@ -47,9 +47,9 @@ class Valves(BaseModel):
 
 **Parameters**:
 - `body`: Dict containing chat completion request (messages, model config, metadata)
-- `__user__`: Optional user [[sin/1. Initialization/Docs/Prompting Guides/context]] dictionary
+- `__user__`: Optional user [[sin/Initialization/Docs/Prompting Guides/context]] dictionary
 
-**Advanced Example: [[sin/1. Initialization/Docs/Prompting Guides/context]] Injection**
+**Advanced Example: [[sin/Initialization/Docs/Prompting Guides/context]] Injection**
 
 ```python
 def inlet(self, body: dict, __user__: Optional[dict] = None) -> dict:
@@ -84,7 +84,7 @@ def _sanitize_input(self, text: str) -> str:
 
 ### 3. Outlet Function (Output Processing)
 
-**Advanced Example: Structured [[sin/1. Initialization/Docs/Prompting Guides/output]] Formatting**
+**Advanced Example: Structured [[sin/Initialization/Docs/Prompting Guides/output]] Formatting**
 
 ```python
 def outlet(self, body: dict, __user__: Optional[dict] = None) -> dict:

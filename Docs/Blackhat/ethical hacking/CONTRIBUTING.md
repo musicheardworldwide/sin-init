@@ -1,6 +1,6 @@
 # Contributing
 
-👏 We're thrilled that you're interested in contributing to our [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]] [[Tools]] project! Your contributions can make a real difference in the cybersecurity community. Here's how you can get involved:
+👏 We're thrilled that you're interested in contributing to our [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]] [[Tools]] project! Your contributions can make a real difference in the cybersecurity community. Here's how you can get involved:
 
 [[tools-export-1745623456262.json]]. **Fork the Repository:** Click the "Fork" button at the top right corner of this repository to create your copy.
 
@@ -14,12 +14,12 @@
 
 6. **Collaborative Review:** Your PR will be reviewed by our security-conscious community. Expect feedback and suggestions for improvement.
 
-7. **Celebrate Collaboration:** Upon approval, your changes will be merged into the main project. You've just made our [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]] [[Tools]] even more powerful!
+7. **Celebrate Collaboration:** Upon approval, your changes will be merged into the main project. You've just made our [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]] [[Tools]] even more powerful!
 
-🚀 By contributing, you're helping us create a safer digital world. [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]] is a crucial aspect of cybersecurity, and your expertise plays a vital role.
+🚀 By contributing, you're helping us create a safer digital world. [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]] is a crucial aspect of cybersecurity, and your expertise plays a vital role.
 
-🔒 Please keep [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]] practices in mind and use these [[Tools]] responsibly and legally.
+🔒 Please keep [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]] practices in mind and use these [[Tools]] responsibly and legally.
 
 💡 If you have ideas, suggestions, or questions, feel free to open an issue or join our community discussions.
 
-🙌 Thank you for considering contributing to our [[sin/1. Initialization/Docs/Blackhat/ethical hacking/ethical hacking]] [[Tools]] project. Together, we can strengthen cybersecurity and protect the digital realm!
+🙌 Thank you for considering contributing to our [[sin/Initialization/Docs/Blackhat/ethical hacking/ethical hacking]] [[Tools]] project. Together, we can strengthen cybersecurity and protect the digital realm!

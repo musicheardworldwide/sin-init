@@ -1,7 +1,7 @@
 # JTAGulator
 
 ### Description
-JTAGulator is an open source hardware hacking tool that assists in identifying on-chip debug interfaces from test points, vias, or component pads on a target device. The tool can save a tremendous amount of [[sin/1. Initialization/Tools/MCP Server Tools/Time/time]] during reverse engineering, particularly for those who don't have the [[sin/1. Initialization/Docs/Blackhat/Resources|Resources]] required for traditional processes.
+JTAGulator is an open source hardware hacking tool that assists in identifying on-chip debug interfaces from test points, vias, or component pads on a target device. The tool can save a tremendous amount of [[sin/Initialization/Tools/MCP Server Tools/Time/time]] during reverse engineering, particularly for those who don't have the [[sin/Initialization/Docs/Blackhat/Resources|Resources]] required for traditional processes.
 
 ### Categories
 * Hardware

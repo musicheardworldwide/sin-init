@@ -3,7 +3,7 @@
 ### Description
 Shoggoth is an open-source project based on C++ and asmjit library used to encrypt given shellcode, PE, and COFF files polymorphically.
 
-Shoggoth will generate an [[sin/1. Initialization/Docs/Prompting Guides/output]] file that stores the payload and its corresponding loader in an obfuscated form. Since the content of the [[sin/1. Initialization/Docs/Prompting Guides/output]] is position-independent, it can be executed directly as a shellcode. While the payload is executing, it decrypts itself at runtime. In addition to the encryption routine, Shoggoth also adds garbage instructions, that change nothing, between routines.
+Shoggoth will generate an [[sin/Initialization/Docs/Prompting Guides/output]] file that stores the payload and its corresponding loader in an obfuscated form. Since the content of the [[sin/Initialization/Docs/Prompting Guides/output]] is position-independent, it can be executed directly as a shellcode. While the payload is executing, it decrypts itself at runtime. In addition to the encryption routine, Shoggoth also adds garbage instructions, that change nothing, between routines.
 
 Current features are listed below:
 

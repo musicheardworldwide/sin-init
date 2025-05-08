@@ -1,7 +1,7 @@
 # Thalos: Simple and Secure approach to file storage in untrusted environments
 
 ### Description
-Thalos is a secure and distributed system for file storage in untrusted environments. Thalos design makes it impossible for anyone who has physical or virtual access to the [[Servers]] to decrypt files without the right key and neither to establish a connection between one file and its owner. Thalos relies on local elaborations to perform encryption. Furthermore, a smart and "hierarchical" key management system makes it quick and simple to use for everyone who has an internet access.
+Thalos is a secure and distributed system for file storage in untrusted environments. Thalos design makes it impossible for anyone who has physical or virtual access to the [[sin/Initialization/Core Info/Servers]] to decrypt files without the right key and neither to establish a connection between one file and its owner. Thalos relies on local elaborations to perform encryption. Furthermore, a smart and "hierarchical" key management system makes it quick and simple to use for everyone who has an internet access.
 
 ### Categories
 * Cryptography

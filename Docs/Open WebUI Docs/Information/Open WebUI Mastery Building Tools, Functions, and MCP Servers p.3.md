@@ -157,4 +157,4 @@ Then:
 uvicorn server:app --host 0.0.0.0 --port 8000
 ```
 
-Boom: you now have a **custom tool server** ready for [[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]]. 🚀
+Boom: you now have a **custom tool server** ready for [[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]]. 🚀

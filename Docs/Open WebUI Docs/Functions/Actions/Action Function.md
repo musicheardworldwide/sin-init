@@ -1,6 +1,6 @@
-Okay, let's break down this "OpenWebUI Advanced Action" script. This script defines an action that can be triggered within OpenWebUI, likely to generate visualizations (charts) based on user input by querying an [[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]] (like OpenAI or Claude) and then embedding the resulting HTML into the chat.
+Okay, let's break down this "OpenWebUI Advanced Action" script. This script defines an action that can be triggered within OpenWebUI, likely to generate visualizations (charts) based on user input by querying an [[sin/Initialization/Docs/Datasets/8. Datasets|8. Datasets]] (like OpenAI or Claude) and then embedding the resulting HTML into the chat.
 
-**Script Breakdown for [[sin/1. Initialization/Tools/MCP Server Tools/Obsidian/Obsidian|Obsidian]] Documentation:**
+**Script Breakdown for [[sin/Initialization/Tools/MCP Server Tools/Obsidian/Obsidian|Obsidian]] Documentation:**
 
 ```markdown
 # OpenWebUI Advanced Action
@@ -200,13 +200,13 @@ def __init__(self):
 
 *   **Entry Point:** [[Action.action]] (async method)
     *   Receives `body`, `__user__`, `__event_emitter__`.
-    *   Uses `__event_emitter__` for [[sin/1. Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] status updates.
+    *   Uses `__event_emitter__` for [[sin/Initialization/Docs/Open WebUI Docs/Open WebUI tools|Open WebUI tools]] status updates.
     *   Uses [[Action.Valves]] for configuration (e.g., `OPENAI_KEY`, `OPENAI_URL`).
     *   Instantiates `openai.OpenAI` client.
     *   Calls `openai.chat.completions.create()` using:
         *   [[Action.SYSTEM_PROMPT_BUILD_CHARTS]]
         *   [[Action.USER_PROMPT_GENERATE_HTML]]
-    *   Calls [[Action.create_or_get_file]] with `user_id` and [[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]]-generated `html_content`.
+    *   Calls [[Action.create_or_get_file]] with `user_id` and [[sin/Initialization/Docs/Datasets/8. Datasets|8. Datasets]]-generated `html_content`.
         *   [[Action.create_or_get_file]] uses `open_webui.[[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]].files.Files.get_files()`.
         *   [[Action.create_or_get_file]] uses `open_webui.[[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]].files.Files.insert_new_file()`.
         *   [[Action.create_or_get_file]] calls [[Action.update_html_content]] (which performs file I/O with `os`).
@@ -218,7 +218,7 @@ def __init__(self):
 *   **Logging:** [[logger]] is used by [[handle_error]] and throughout the `Action` class.
 *   **File System Interaction:** Primarily through `[[Action.create_or_get_file]]` and `[[Action.update_html_content]]` interacting with `os` and `open_webui.[[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]].files.Files`.
 
-This detailed breakdown should be very helpful for your [[sin/1. Initialization/Tools/MCP Server Tools/Obsidian/Obsidian|Obsidian]] documentation and for an [[sin/1. Initialization/Docs/Datasets/8. Datasets|8. Datasets]] to understand the script's structure and operations.
+This detailed breakdown should be very helpful for your [[sin/Initialization/Tools/MCP Server Tools/Obsidian/Obsidian|Obsidian]] documentation and for an [[sin/Initialization/Docs/Datasets/8. Datasets|8. Datasets]] to understand the script's structure and operations.
 ```
 
 And here is the complete script:

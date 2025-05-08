@@ -1,7 +1,7 @@
 # Brainstorm and Organize Ideas
 
 ## Objective
-I want to put together a plan for what I’m trying to do. Below is the general idea and the [[sin/1. Initialization/Docs/Blackhat/Resources|Resources]] I have that need to be organized.
+I want to put together a plan for what I’m trying to do. Below is the general idea and the [[sin/Initialization/Docs/Blackhat/Resources|Resources]] I have that need to be organized.
 
 ---
 
@@ -33,7 +33,7 @@ I want to put together a plan for what I’m trying to do. Below is the general 
 [[### # Brainstorm and Organize Ideas
 
 ## Objective
-I want to put together a plan for what I’m trying to do. Below is the general idea and the [[sin/1. Initialization/Docs/Blackhat/Resources|Resources]] I have that need to be organized.
+I want to put together a plan for what I’m trying to do. Below is the general idea and the [[sin/Initialization/Docs/Blackhat/Resources|Resources]] I have that need to be organized.
 
 ---
 
