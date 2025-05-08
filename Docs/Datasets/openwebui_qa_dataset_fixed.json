@@ -1,0 +1,642 @@
+[
+  [
+    {
+      "question": "How does Open WebUI manage environment configuration during and after deployment?",
+      "answer": "Open WebUI uses two kinds of environment variables: standard and `PersistentConfig`. Standard variables are applied each time the app starts, while `PersistentConfig` values are stored internally after the first launch. This allows real-time updates within the WebUI without depending on external variables. For example, once `WEBUI_URL` is set and the app is restarted, it retains its internal value even if the external variable changes.",
+      "topic": "Environment Configuration",
+      "difficulty": "Advanced",
+      "tags": [
+        "env",
+        "PersistentConfig",
+        "deployment"
+      ],
+      "example": {
+        "ENV": "prod",
+        "WEBUI_URL": "https://open.company.com",
+        "ENABLE_SIGNUP": true
+      }
+    },
+    {
+      "question": "What role does the `pipe` method serve in Open WebUI's plugin system?",
+      "answer": "The `pipe` method in a Pipe function processes user input and custom logic before returning a response to Open WebUI. It is the core processing logic for your agent. The method receives the `body` dictionary, which contains the user's message, and it returns the manipulated result. This allows developers to shape responses, route data, or call APIs dynamically within a pipe.",
+      "topic": "Pipe Functions",
+      "difficulty": "Intermediate",
+      "tags": [
+        "pipes",
+        "models",
+        "custom logic"
+      ],
+      "example": {
+        "pipe": "def pipe(self, body): return f'Model ID {self.valves.MODEL_ID}: Hello, {body['prompt']}'"
+      }
+    },
+    {
+      "question": "What is the purpose of the `inlet` function in Open WebUI filters?",
+      "answer": "The `inlet` function preprocesses user inputs before they reach the LLM. It's commonly used to inject context, enforce input structure, or sanitize data. For example, if a user query lacks clarity, you can programmatically append clarifying instructions or formatting to improve model comprehension.",
+      "topic": "Filter Functions",
+      "difficulty": "Advanced",
+      "tags": [
+        "inlet",
+        "input modification",
+        "filters"
+      ],
+      "example": {
+        "inlet": "def inlet(self, body): body['messages',0,'content'] = 'You are a helpful assistant. ' + body['messages',0,'content']; return body"
+      }
+    },
+    {
+      "question": "How can developers expose MCP-based tools through Open WebUI using the `mcpo` proxy?",
+      "answer": "Using the `mcpo` command-line tool, developers can wrap an MCP server (e.g., `mcp-server-time`) into a RESTful OpenAPI server. This allows seamless integration into Open WebUI, even for legacy tools. The command `uvx mcpo --port 8000 -- uvx mcp-server-time` exposes the server at `http://localhost:8000`, which can be connected via Open WebUI Settings > Tools.",
+      "topic": "MCP Integration",
+      "difficulty": "Advanced",
+      "tags": [
+        "MCP",
+        "OpenAPI",
+        "tool server"
+      ],
+      "example": {
+        "command": "uvx mcpo --port 8000 -- uvx mcp-server-time --local-timezone=America/New_York",
+        "docs_url": "http://localhost:8000/docs"
+      }
+    },
+    {
+      "question": "What makes OpenAPI tool servers more practical than MCP in production environments?",
+      "answer": "OpenAPI tool servers benefit from better tooling, simpler debugging, native security support, and widespread developer familiarity. Unlike MCP, OpenAPI enables reuse of REST APIs without protocol rewrites. It also supports interactive documentation and JWT authentication out of the box. MCP, while powerful, introduces extra layers of complexity unsuitable for many production stacks.",
+      "topic": "OpenAPI vs MCP",
+      "difficulty": "Expert",
+      "tags": [
+        "OpenAPI",
+        "MCP",
+        "security"
+      ],
+      "example": {
+        "advantage": "Secure API access with JWT + Swagger UI",
+        "preferred_for": "Modern REST-native teams"
+      }
+    },
+    {
+      "question": "What is the function of the `stream` method in a filter plugin and how does it differ from `outlet`?",
+      "answer": "The `stream` method intercepts and modifies model output in real-time as chunks stream in. It's ideal for formatting partial completions, censoring, or enriching streamed responses before they fully render. In contrast, `outlet` applies only once the model's response is complete, ideal for post-processing like truncation, logging, or UI polish.",
+      "topic": "Filter Functions",
+      "difficulty": "Advanced",
+      "tags": [
+        "streaming",
+        "real-time processing",
+        "output filter"
+      ],
+      "example": {
+        "stream": "def stream(self, event): event['text'] = event['text'].replace('foo', 'bar'); return event",
+        "outlet": "def outlet(self, body): print('Final output:', body)"
+      }
+    },
+    {
+      "question": "How do Action functions enable interactive UX elements within Open WebUI chats?",
+      "answer": "Action functions allow developers to inject buttons below user messages that trigger backend logic or UI prompts. They utilize `__event_call__` to fetch real-time user input or emit UI interactions. This bridges static prompts and live chat workflows, enabling forms, confirmations, and interactive visualizations.",
+      "topic": "Action Functions",
+      "difficulty": "Intermediate",
+      "tags": [
+        "UI",
+        "interactivity",
+        "event-driven"
+      ],
+      "example": {
+        "action": "await __event_call__({ 'type': 'input', 'data': { 'title': 'Add Note', 'placeholder': 'Write a note' } })"
+      }
+    },
+    {
+      "question": "How does the Open WebUI Tools system work and how is it tied to LLMs?",
+      "answer": "Tools in Open WebUI are Python classes containing callable methods, exposed to LLMs during chat if the model supports function calling. They\u2019re attached to specific models via Workspace > Models. Tools can use `Valves` for secure, parameterized access (e.g., API keys), and enable real-time data fetching or actions inside chats.",
+      "topic": "Tools",
+      "difficulty": "Intermediate",
+      "tags": [
+        "tools",
+        "function calling",
+        "llm plugins"
+      ],
+      "example": {
+        "tool": "class Tools:\n  def reverse(self, text: str) -> str:\n    return text[::-1]",
+        "valve": "class Valves(BaseModel): api_key: str = Field(default='')"
+      }
+    },
+    {
+      "question": "What is a pipe 'manifold' and how does it allow multi-model routing?",
+      "answer": "A 'manifold' in Open WebUI is a Pipe that defines multiple models via a `pipes()` method, each with distinct IDs and behaviors. It returns a list of models to display in the UI, each routed through shared or conditional logic inside the pipe. This is ideal for dynamic load balancing, multilingual support, or AI persona variation.",
+      "topic": "Pipe Functions",
+      "difficulty": "Expert",
+      "tags": [
+        "routing",
+        "multi-model",
+        "manifold"
+      ],
+      "example": {
+        "pipes": "[{ 'id': 'gpt4-lite', 'name': 'GPT-4 Fast' }, { 'id': 'gpt4-qa', 'name': 'GPT-4 Longform QA' }]",
+        "logic": "def pipe(self, body): return f\"{body['model']}: {body['messages',-1,'content']}\""
+      }
+    },
+    {
+      "question": "How does Open WebUI enable Retrieval Augmented Generation (RAG) and how is it used programmatically?",
+      "answer": "RAG in Open WebUI enhances model output by integrating vectorized document content into chat completions. Developers upload files via `/api/v1/files/`, then associate them with knowledge collections. These collections are referenced at runtime to enrich responses, particularly useful for internal docs or grounded QA.",
+      "topic": "RAG",
+      "difficulty": "Advanced",
+      "tags": [
+        "rag",
+        "knowledge base",
+        "vector search"
+      ],
+      "example": {
+        "upload": "curl -X POST -F 'file=@manual.pdf' -H 'Authorization: Bearer token' http://localhost:3000/api/v1/files/",
+        "associate": "POST /api/v1/knowledge/{id}/file/add"
+      }
+    },
+    {
+      "question": "What are Open WebUI's best practices for securing local OpenAPI tool servers?",
+      "answer": "To avoid CORS and mixed-content errors, local OpenAPI servers must include permissive `Access-Control-Allow-Origin` headers. For HTTPS WebUI deployments, tool servers must also serve over HTTPS. Using FastAPI, this means applying `CORSMiddleware`. JWTs or API keys are preferred for user-based request scoping.",
+      "topic": "Security",
+      "difficulty": "Advanced",
+      "tags": [
+        "cors",
+        "https",
+        "jwt",
+        "tool server"
+      ],
+      "example": {
+        "middleware": "app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_methods=['*'], allow_headers=['*'])"
+      }
+    },
+    {
+      "question": "How can developers use OpenAPI-native tools in a local Open WebUI instance?",
+      "answer": "OpenAPI-compatible tools can be hosted locally (e.g., with `uvicorn`) and added via WebUI settings. Once connected, models with tool support (like GPT-4) can access them interactively. Developers see the tool icon in chat and can call tools via LLM context or `function_call` mode if enabled.",
+      "topic": "Tool Integration",
+      "difficulty": "Intermediate",
+      "tags": [
+        "openapi",
+        "tool server",
+        "native function calling"
+      ],
+      "example": {
+        "tool_server": "uvicorn main:app --port 8000",
+        "chat_param": "Enable Native Function Calling in Chat Controls"
+      }
+    },
+    {
+      "question": "How does Open WebUI support multiple API endpoints and what is their purpose?",
+      "answer": "The Open WebUI API offers routes for chat completions, file uploads, model listing, and knowledge management. These endpoints mirror OpenAI\u2019s schema for compatibility, allowing plug-and-play replacement of LLM providers or internal toolchains. Authentication uses Bearer tokens, retrieved via user settings.",
+      "topic": "API Usage",
+      "difficulty": "Advanced",
+      "tags": [
+        "api",
+        "completions",
+        "authentication"
+      ],
+      "example": {
+        "chat": "POST /api/chat/completions",
+        "models": "GET /api/models",
+        "auth": "Authorization: Bearer YOUR_API_KEY"
+      }
+    },
+    {
+      "question": "How does Open WebUI handle real-time chat data persistence, and what trade-offs exist?",
+      "answer": "`ENABLE_REALTIME_CHAT_SAVE` allows Open WebUI to persist each streamed chunk of model output to the database as it\u2019s generated. This ensures session recovery and consistency, but introduces latency. Disabling it improves responsiveness at the cost of potential data loss in crashes or disconnections.",
+      "topic": "Persistence",
+      "difficulty": "Advanced",
+      "tags": [
+        "realtime",
+        "latency",
+        "database"
+      ],
+      "example": {
+        "env": "ENABLE_REALTIME_CHAT_SAVE=true",
+        "impact": "Recovery possible mid-stream, but slower UI feedback"
+      }
+    },
+    {
+      "question": "How can filter functions be used to auto-correct vague prompts before LLM invocation?",
+      "answer": "By customizing the `inlet` function, you can prepend structured instructions or context to guide vague queries. This improves LLM interpretation and aligns intent. A common use is rewriting messages like 'help me' into 'You are a tech assistant. Help the user with the following:' before sending to the model.",
+      "topic": "Filters",
+      "difficulty": "Expert",
+      "tags": [
+        "prompt engineering",
+        "input transformation"
+      ],
+      "example": {
+        "inlet": "def inlet(self, body): body['messages',0,'content'] = 'You are a tech assistant. ' + body['messages',0,'content']; return body"
+      }
+    },
+    {
+      "question": "What\u2019s the structure and use of `Valves` inside Tools and why are they important?",
+      "answer": "`Valves` define configuration inputs for tools, such as API keys or toggles, using Pydantic. These persist across calls and secure user inputs. It's a best practice to encapsulate all tool params here to prevent hardcoding and support multi-user or multi-env workflows.",
+      "topic": "Tools",
+      "difficulty": "Advanced",
+      "tags": [
+        "valves",
+        "configuration",
+        "security"
+      ],
+      "example": {
+        "valves": "class Valves(BaseModel): api_key: str = Field(..., description='API key for external service')"
+      }
+    },
+    {
+      "question": "How do you create a native OpenAPI tool server and integrate it with Open WebUI?",
+      "answer": "Create a FastAPI (or similar) app with valid OpenAPI schema. Run it on a known port (e.g., 8000). In Open WebUI, go to Settings > Tools and register the tool server by URL. Now the tool becomes accessible via the tool menu or LLM function calling context.",
+      "topic": "OpenAPI",
+      "difficulty": "Intermediate",
+      "tags": [
+        "integration",
+        "openapi",
+        "tool server"
+      ],
+      "example": {
+        "fastapi": "uvicorn main:app --host 0.0.0.0 --port 8000",
+        "ui": "Settings > Tools > Add Tool Server"
+      }
+    },
+    {
+      "question": "How does Open WebUI support GPT-style function calling within native chat completions?",
+      "answer": "Open WebUI supports models with native function-calling interfaces like GPT-4. When enabled, the system passes structured tool definitions and lets the model invoke them by returning a JSON object. The UI can trigger these calls automatically if the tool logic matches the prompt.",
+      "topic": "LLM Integration",
+      "difficulty": "Advanced",
+      "tags": [
+        "function calling",
+        "gpt",
+        "tools"
+      ],
+      "example": {
+        "mode": "Enable 'Native' under Chat Controls > Advanced Params > Function Calling",
+        "return": "{ 'name': 'get_weather', 'parameters': { 'city': 'London' } }"
+      }
+    },
+    {
+      "question": "What is `DEFAULT_TITLE_GENERATION_PROMPT_TEMPLATE` used for in Open WebUI?",
+      "answer": "This template drives the auto-generation of chat titles. It instructs the system to produce a concise, emoji-tagged summary based on recent messages. Developers can override it to customize title tone, format, or language strategy.",
+      "topic": "Autotitle",
+      "difficulty": "Intermediate",
+      "tags": [
+        "prompt templates",
+        "customization",
+        "chat UX"
+      ],
+      "example": {
+        "title_prompt": "Generate a concise, 3-5 word title with an emoji summarizing the chat history.",
+        "result": "{ 'title': '\ud83d\udcda Python Decorators Explained' }"
+      }
+    },
+    {
+      "question": "What\u2019s the difference between `AUTOCOMPLETE_GENERATION_PROMPT_TEMPLATE` and `AUTOCOMPLETE_GENERATION_INPUT_MAX_LENGTH`?",
+      "answer": "`AUTOCOMPLETE_GENERATION_PROMPT_TEMPLATE` defines the instruction set used by the model for predicting continuations. `INPUT_MAX_LENGTH` limits the text token length sent to that model. Both control latency, accuracy, and behavior of text suggestions.",
+      "topic": "Autocomplete",
+      "difficulty": "Advanced",
+      "tags": [
+        "autocomplete",
+        "prompt control",
+        "token budget"
+      ],
+      "example": {
+        "prompt": "Continue the sentence naturally based on type='General'",
+        "length": 512
+      }
+    },
+    {
+      "question": "How does Open WebUI evaluate and compare models in the Evaluation Arena?",
+      "answer": "The Evaluation Arena mode enables comparing multiple models side-by-side on the same prompt. You enable it using `ENABLE_EVALUATION_ARENA_MODELS`, which unlocks a voting interface in chat to help rank outputs. It\u2019s useful for A/B testing, benchmarking, or team model selection.",
+      "topic": "Evaluation",
+      "difficulty": "Intermediate",
+      "tags": [
+        "model comparison",
+        "A/B testing",
+        "arena"
+      ],
+      "example": {
+        "env": "ENABLE_EVALUATION_ARENA_MODELS=true",
+        "usage": "Multi-model voting UI appears in chat"
+      }
+    },
+    {
+      "question": "What does the `TOOLS_FUNCTION_CALLING_PROMPT_TEMPLATE` environment variable control?",
+      "answer": "It controls how Open WebUI instructs the LLM to parse and select the correct tool function. The prompt template lists available tools and includes a JSON schema expectation to guide valid tool invocation format. This ensures the model knows how to use tools consistently.",
+      "topic": "Tool Function Calling",
+      "difficulty": "Advanced",
+      "tags": [
+        "prompt template",
+        "function call",
+        "tooling"
+      ],
+      "example": {
+        "template": "Available Tools: {{TOOLS}} Return a JSON object in the format { 'name': 'tool', 'parameters': { ... } }"
+      }
+    },
+    {
+      "question": "How do channel-based models differ from standard models in Open WebUI?",
+      "answer": "Channels are a mode in Open WebUI that allow for contextual grouping or separation of conversations. With `ENABLE_CHANNELS` set to true, the UI organizes chats into independent threads, ideal for workspace segmentation or project tracking across users or bots.",
+      "topic": "Channels",
+      "difficulty": "Intermediate",
+      "tags": [
+        "channels",
+        "context",
+        "UX"
+      ],
+      "example": {
+        "env": "ENABLE_CHANNELS=true",
+        "usage": "Chats grouped into project-specific threads"
+      }
+    },
+    {
+      "question": "How does the `PersistentConfig` system affect environment variable overrides after deployment?",
+      "answer": "In Open WebUI, variables marked as `PersistentConfig` are stored internally after the first launch. This means restarting the container won't reapply external environment variable changes unless explicitly updated from the UI. It's a safeguard against accidental config drift but requires manual override inside the app for updates.",
+      "topic": "Deployment",
+      "difficulty": "Expert",
+      "tags": [
+        "persistent",
+        "environment",
+        "config"
+      ],
+      "example": {
+        "initial": "ENABLE_SIGNUP=true in .env",
+        "change": "Setting ENABLE_SIGNUP=false later won't apply unless done via UI"
+      }
+    },
+    {
+      "question": "What does the `DATA_DIR` environment variable control and how does it influence runtime behavior?",
+      "answer": "`DATA_DIR` sets the root directory for all internal storage \u2014 including uploaded files, vector DBs, logs, and cache. It\u2019s essential for managing persistent data across deployments, especially when running in Docker or Kubernetes with volume mounts.",
+      "topic": "Filesystem",
+      "difficulty": "Intermediate",
+      "tags": [
+        "paths",
+        "storage",
+        "runtime"
+      ],
+      "example": {
+        "env": "DATA_DIR=/mnt/openwebui/data",
+        "impact": "All user uploads stored at /mnt/openwebui/data/uploads/"
+      }
+    },
+    {
+      "question": "How does `OPENAI_API_KEYS` differ from `OPENAI_API_KEY` and when should each be used?",
+      "answer": "`OPENAI_API_KEY` is a single key used for outbound OpenAI requests. `OPENAI_API_KEYS` supports a semicolon-separated list, allowing Open WebUI to round-robin or load-balance API usage. This is helpful for rate-limiting or serving multi-tenant endpoints.",
+      "topic": "API Keys",
+      "difficulty": "Advanced",
+      "tags": [
+        "openai",
+        "keys",
+        "rate limiting"
+      ],
+      "example": {
+        "env": "OPENAI_API_KEYS=sk-abc123;sk-def456;sk-ghi789",
+        "benefit": "Distributes load across multiple API credentials"
+      }
+    },
+    {
+      "question": "What\u2019s the role of `JWT_EXPIRES_IN`, and what security trade-offs does it present?",
+      "answer": "`JWT_EXPIRES_IN` defines the lifespan of authentication tokens in seconds. A short expiry improves security but may frustrate UX with frequent logouts. A value of `-1` disables expiration entirely, which is useful for dev but discouraged in production environments.",
+      "topic": "Security",
+      "difficulty": "Advanced",
+      "tags": [
+        "jwt",
+        "auth",
+        "expiration"
+      ],
+      "example": {
+        "env": "JWT_EXPIRES_IN=86400",
+        "note": "Token valid for 1 day"
+      }
+    },
+    {
+      "question": "What does the `pipes()` method allow inside a Pipe, and how is it structured?",
+      "answer": "The `pipes()` method returns a list of dictionaries, each representing a model exposed by the Pipe. This is used to register multiple virtual models, each handled by shared or variant logic in the same file \u2014 ideal for proxies or multi-agent blends.",
+      "topic": "Pipe Functions",
+      "difficulty": "Expert",
+      "tags": [
+        "pipes",
+        "multi-model",
+        "dynamic"
+      ],
+      "example": {
+        "pipes": "[{'id': 'claude-v1', 'name': 'Claude'}, {'id': 'claude-v2', 'name': 'Claude-Next'}]"
+      }
+    },
+    {
+      "question": "How does Open WebUI's `ADMIN_EMAIL` variable interact with the UI and permissions?",
+      "answer": "`ADMIN_EMAIL` sets the primary administrative contact, which is displayed in certain admin panels if `SHOW_ADMIN_DETAILS` is enabled. It also determines the default admin account behavior for first-time users on invite-based systems.",
+      "topic": "Admin Controls",
+      "difficulty": "Intermediate",
+      "tags": [
+        "roles",
+        "admin",
+        "email"
+      ],
+      "example": {
+        "env": "ADMIN_EMAIL=wes@openwebui.dev",
+        "display": "Visible in top-right admin section"
+      }
+    },
+    {
+      "question": "What does `USE_CUDA_DOCKER` enable in Open WebUI and when should it be used?",
+      "answer": "Setting `USE_CUDA_DOCKER=true` enables CUDA-based image builds that leverage GPU acceleration for embeddings or local whisper. This is essential for high-throughput workloads, but requires a compatible NVIDIA runtime and driver setup.",
+      "topic": "Performance",
+      "difficulty": "Advanced",
+      "tags": [
+        "gpu",
+        "docker",
+        "cuda"
+      ],
+      "example": {
+        "env": "USE_CUDA_DOCKER=true",
+        "requirement": "nvidia-container-toolkit must be installed"
+      }
+    },
+    {
+      "question": "What\u2019s the role of `__event_emitter__` and `__event_call__` in Action Functions?",
+      "answer": "`__event_emitter__` sends real-time events to the frontend (e.g., to show a tooltip or preview), while `__event_call__` requests user input or triggers UI prompts. This enables interactive workflows inside chat, similar to JavaScript event listeners.",
+      "topic": "Action Functions",
+      "difficulty": "Expert",
+      "tags": [
+        "event-driven",
+        "chat UX",
+        "frontend API"
+      ],
+      "example": {
+        "call": "__event_call__({ 'type': 'input', 'data': { 'title': 'Comment?' } })"
+      }
+    },
+    {
+      "question": "What is the benefit of using `mcpo` instead of rewriting an MCP server?",
+      "answer": "`mcpo` wraps an existing MCP tool and exposes it through OpenAPI without code changes. This avoids redundant logic, keeps backward compatibility, and allows instant testing via Swagger docs at `/docs`. It\u2019s perfect for legacy tooling.",
+      "topic": "MCP Proxy",
+      "difficulty": "Advanced",
+      "tags": [
+        "mcpo",
+        "proxy",
+        "openapi bridge"
+      ],
+      "example": {
+        "command": "uvx mcpo --port 8000 -- uvx mcp-server-time",
+        "result": "Swagger docs available at http://localhost:8000/docs"
+      }
+    },
+    {
+      "question": "How does Open WebUI's chat system support multi-user authentication and access control?",
+      "answer": "With signup and login enabled, users are assigned roles: `pending`, `user`, or `admin`. The `DEFAULT_USER_ROLE` determines what new users inherit. Admins can access all chat logs (if `ENABLE_ADMIN_CHAT_ACCESS=true`) and export content when `ENABLE_ADMIN_EXPORT=true`.",
+      "topic": "Access Control",
+      "difficulty": "Advanced",
+      "tags": [
+        "multi-user",
+        "roles",
+        "permissions"
+      ],
+      "example": {
+        "env": "DEFAULT_USER_ROLE=user",
+        "restriction": "pending users require manual approval"
+      }
+    },
+    {
+      "question": "How can you restrict tool usage to specific LLMs inside Open WebUI?",
+      "answer": "Tools are bound per model using the Workspace > Models panel. Only those explicitly enabled under a given model\u2019s settings are available during chat. This ensures tools don\u2019t show up universally, letting developers scope functionality by model capability or license.",
+      "topic": "Tool Permissions",
+      "difficulty": "Intermediate",
+      "tags": [
+        "tools",
+        "model scope",
+        "chat"
+      ],
+      "example": {
+        "enable": "Open Workspace > Models > \u270e > Tools section > Enable per model",
+        "scope": "Different tools for GPT-4 vs Mistral"
+      }
+    },
+    {
+      "question": "How do you secure OpenAPI endpoints for tool servers connected to Open WebUI?",
+      "answer": "Implement authentication using JWT, Bearer Tokens, or API Key headers. These are automatically supported by Open WebUI tool integration. For production, enforce HTTPS and origin-based CORS policies to avoid mixed-content blocks.",
+      "topic": "Tool Server Security",
+      "difficulty": "Expert",
+      "tags": [
+        "openapi",
+        "auth",
+        "security"
+      ],
+      "example": {
+        "header": "Authorization: Bearer <token>",
+        "cors": "Allow-Origin: https://openwebui.yourdomain.com"
+      }
+    },
+    {
+      "question": "What does the `Function Calling: Native` toggle do in chat settings?",
+      "answer": "When enabled, this lets the LLM generate and return a function call in JSON format based on tool schemas. The chat engine then executes that call if a matching tool is available. This is required for GPT-native tool use like OpenAI or Claude.",
+      "topic": "Function Calling",
+      "difficulty": "Advanced",
+      "tags": [
+        "chat",
+        "llm",
+        "tools"
+      ],
+      "example": {
+        "setting": "Chat Controls > Advanced > Function Calling > Native",
+        "result": "{ 'name': 'get_flight', 'parameters': { 'from': 'NYC' } }"
+      }
+    },
+    {
+      "question": "What is the purpose of `SHOW_ADMIN_DETAILS`, and when should it be disabled?",
+      "answer": "`SHOW_ADMIN_DETAILS` controls whether admin usernames and emails are displayed in the frontend. Disable it in public or enterprise deployments to reduce the surface for phishing or identity attacks, especially in federated setups.",
+      "topic": "Admin UX",
+      "difficulty": "Intermediate",
+      "tags": [
+        "visibility",
+        "admin",
+        "security"
+      ],
+      "example": {
+        "env": "SHOW_ADMIN_DETAILS=false",
+        "effect": "Admin info hidden from chat user list"
+      }
+    },
+    {
+      "question": "How can developers simulate fallback routing between LLMs in Open WebUI?",
+      "answer": "Using a pipe function with conditionals inside `pipe(self, body)`, you can inspect body metadata and re-route queries. For example, detect if `model=fast-default` fails and instead call a more robust `gpt4-fallback`. This mimics retry logic using multiple APIs.",
+      "topic": "Pipes",
+      "difficulty": "Expert",
+      "tags": [
+        "fallback",
+        "multi-model",
+        "routing"
+      ],
+      "example": {
+        "fallback": "if 'fail' in body['messages',0,'content']: return call_model('gpt4')",
+        "primary": "default=local-fast"
+      }
+    },
+    {
+      "question": "What role do tool \u2018Valves\u2019 play in multi-user or team deployments?",
+      "answer": "Valves can be configured to allow user-specific inputs via `UserValves`, making tool usage adaptable per user or session. This supports user-scoped API keys, preferences, or UI states \u2014 key for enterprise or multi-tenant configurations.",
+      "topic": "Tool State",
+      "difficulty": "Advanced",
+      "tags": [
+        "valves",
+        "multi-user",
+        "dynamic tools"
+      ],
+      "example": {
+        "user_valve": "class UserValves(BaseModel): user_api_key: str",
+        "usage": "Prompt user for API key before calling external API"
+      }
+    },
+    {
+      "question": "How does Open WebUI allow datasets or documents to be used during chats?",
+      "answer": "Uploaded files are parsed and vectorized into a knowledge base via `/api/v1/files/`. These vectors are then queried contextually during chats using the RAG pipeline. Developers can group files into knowledge collections for better domain scoping.",
+      "topic": "RAG",
+      "difficulty": "Advanced",
+      "tags": [
+        "dataset",
+        "contextual",
+        "knowledge"
+      ],
+      "example": {
+        "upload": "POST /api/v1/files/",
+        "grouping": "POST /api/v1/knowledge/{id}/file/add"
+      }
+    },
+    {
+      "question": "What is the purpose of the chat input \u2018Tool Server Indicator\u2019 UI element?",
+      "answer": "When a tool server is connected, Open WebUI displays a small icon below the input bar. Clicking it shows available tools and server info, helping users inspect or debug tool visibility, especially if auto-call fails due to config or role issues.",
+      "topic": "UX",
+      "difficulty": "Intermediate",
+      "tags": [
+        "tool UX",
+        "chat",
+        "debug"
+      ],
+      "example": {
+        "tooltip": "Click to see: Tools from http://localhost:8000",
+        "fix": "Shows if OpenAPI schema is invalid"
+      }
+    },
+    {
+      "question": "How can `ENABLE_MESSAGE_RATING` enhance model evaluation workflows?",
+      "answer": "When enabled, each message in chat gains a thumbs up/down rating option. This helps teams collect feedback on model performance, train reward models, or monitor LLM hallucination rates during beta testing or fine-tuning stages.",
+      "topic": "Evaluation",
+      "difficulty": "Intermediate",
+      "tags": [
+        "feedback",
+        "rlhf",
+        "chat rating"
+      ],
+      "example": {
+        "env": "ENABLE_MESSAGE_RATING=true",
+        "usage": "Rate each response inline"
+      }
+    },
+    {
+      "question": "What types of filters can be combined in Open WebUI and how are they ordered?",
+      "answer": "Open WebUI supports chaining `inlet`, `stream`, and `outlet` filters in sequence. Each one processes the request at its stage: `inlet` before model, `stream` during output, and `outlet` after response. They can be layered and configured independently per model.",
+      "topic": "Filter Stacking",
+      "difficulty": "Expert",
+      "tags": [
+        "filters",
+        "pipeline",
+        "transform"
+      ],
+      "example": {
+        "stack": "[Input Cleaner > Tool Injector > HTML Formatter]",
+        "order": "inlet \u2192 stream \u2192 outlet"
+      }
+    }
+  ]
+]
